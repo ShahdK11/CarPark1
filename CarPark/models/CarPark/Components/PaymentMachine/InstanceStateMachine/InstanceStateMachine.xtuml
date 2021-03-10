@@ -1313,11 +1313,11 @@ if(self.IsCurrencySlotOpen)
 end if;
 //return inserted amount to the user
 self.returnedAmount= param.InsertedAmount;
-self.returnCurrancy();
+self.returnCurrancy(InsertedCurrancy:self.returnedAmount);
 //return ticket  
 self.IsTicketSlotOpen=true;
-self.returnTicket();
-
+self.returnTicket(TicketID:self.ActivatedTicket);
+//unrelate 
 /*CloseCurrencySlot() 
 ReturnMoney(InsertedAmount:real)
 ReturnTicket() */',
