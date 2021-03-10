@@ -7,6 +7,27 @@ INSERT INTO O_OBJ
 	'Ticket',
 	'A record contains information about the vehicle entry and exit of the car park. The ticket is initiated once the ticket button is pressed. and issued if the car park is not full.',
 	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("a47a5cd9-8de7-4370-94ca-ff1e109e9141",
+	"abf44062-5612-49b4-a45b-627ecdbff52f",
+	'printDeadline',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	3,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("f8d44b51-a734-417c-926b-6b21af397e11",
+	"a47a5cd9-8de7-4370-94ca-ff1e109e9141",
+	'msg',
+	"ba5eda7a-def5-0000-0000-000000000003",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
 INSERT INTO O_NBATTR
 	VALUES ("e4e0a0d6-66a7-4d73-9536-a668da1eacb4",
 	"abf44062-5612-49b4-a45b-627ecdbff52f");
@@ -50,7 +71,7 @@ INSERT INTO O_DBATTR
 	VALUES ("051c3208-0c05-47a9-8f3a-42902f95f035",
 	"abf44062-5612-49b4-a45b-627ecdbff52f",
 	'',
-	3,
+	1,
 	0);
 INSERT INTO O_BATTR
 	VALUES ("051c3208-0c05-47a9-8f3a-42902f95f035",
@@ -92,8 +113,8 @@ True when the fee for the stay has been paid; false otherwise.
 INSERT INTO O_DBATTR
 	VALUES ("7597c7f4-308c-482d-afa1-c6f7cda579e3",
 	"abf44062-5612-49b4-a45b-627ecdbff52f",
-	'',
-	3,
+	'self.ExitDeadline=self.ExitDateTime+900000;',
+	1,
 	0);
 INSERT INTO O_BATTR
 	VALUES ("7597c7f4-308c-482d-afa1-c6f7cda579e3",

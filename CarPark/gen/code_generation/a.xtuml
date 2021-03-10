@@ -10,7 +10,9 @@ INSERT INTO EP_PKG
 	1,
 	1,
 	'Components',
-	'',
+	'Assumptions:
+- There will be no history records kept regarding the detection of the vehicales by the sensors.
+- Once the button is pressed the button will be disabled, to prevent requesting multipe tickets for one vehicle.',
 	0);
 INSERT INTO PE_PE
 	VALUES (3,
@@ -20,568 +22,4091 @@ INSERT INTO PE_PE
 	4);
 INSERT INTO O_OBJ
 	VALUES (3,
-	'Sensor',
-	1,
-	'Sensor',
-	'',
-	0);
-INSERT INTO O_NBATTR
-	VALUES (4,
-	3);
-INSERT INTO O_BATTR
-	VALUES (4,
-	3);
-INSERT INTO O_ATTR
-	VALUES (4,
-	3,
-	0,
-	'Stand',
-	'',
-	'',
-	'Stand',
-	0,
-	5,
-	'',
-	'');
-INSERT INTO O_NBATTR
-	VALUES (6,
-	3);
-INSERT INTO O_BATTR
-	VALUES (6,
-	3);
-INSERT INTO O_ATTR
-	VALUES (6,
-	3,
-	4,
-	'Status',
-	'',
-	'',
-	'Status',
-	0,
-	5,
-	'',
-	'');
-INSERT INTO O_ID
-	VALUES (0,
-	3);
-INSERT INTO O_ID
-	VALUES (1,
-	3);
-INSERT INTO O_ID
-	VALUES (2,
-	3);
-INSERT INTO PE_PE
-	VALUES (7,
-	1,
-	2,
-	0,
-	4);
-INSERT INTO O_OBJ
-	VALUES (7,
-	'Ticket',
-	2,
-	'Ticket',
-	'',
-	0);
-INSERT INTO O_NBATTR
-	VALUES (8,
-	7);
-INSERT INTO O_BATTR
-	VALUES (8,
-	7);
-INSERT INTO O_ATTR
-	VALUES (8,
-	7,
-	0,
-	'TicketID',
-	'',
-	'',
-	'TicketID',
-	0,
-	5,
-	'',
-	'');
-INSERT INTO O_NBATTR
-	VALUES (9,
-	7);
-INSERT INTO O_BATTR
-	VALUES (9,
-	7);
-INSERT INTO O_ATTR
-	VALUES (9,
-	7,
-	8,
-	'entryDateTime',
-	'',
-	'',
-	'entryDateTime',
-	0,
-	5,
-	'',
-	'');
-INSERT INTO O_NBATTR
-	VALUES (10,
-	7);
-INSERT INTO O_BATTR
-	VALUES (10,
-	7);
-INSERT INTO O_ATTR
-	VALUES (10,
-	7,
+	'Alarm',
 	9,
-	'Fee',
-	'',
-	'',
-	'Fee',
-	0,
-	5,
-	'',
-	'');
+	'Alarm',
+	'A sound to alarm the operator about: Exit Deadline Missed and No Ticket Payment.
+',
+	0);
 INSERT INTO O_NBATTR
-	VALUES (11,
-	7);
+	VALUES (4,
+	3);
 INSERT INTO O_BATTR
-	VALUES (11,
-	7);
+	VALUES (4,
+	3);
 INSERT INTO O_ATTR
-	VALUES (11,
-	7,
-	10,
-	'IsPaid',
-	'',
-	'',
-	'IsPaid',
+	VALUES (4,
+	3,
 	0,
-	5,
+	'Status',
+	'indicates if there is a raised alert in the control room or not.
+',
 	'',
-	'');
-INSERT INTO O_NBATTR
-	VALUES (12,
-	7);
-INSERT INTO O_BATTR
-	VALUES (12,
-	7);
-INSERT INTO O_ATTR
-	VALUES (12,
-	7,
-	11,
-	'ExitDeadline',
-	'',
-	'',
-	'ExitDeadline',
+	'Status',
 	0,
 	5,
 	'',
 	'');
 INSERT INTO O_ID
 	VALUES (0,
-	7);
+	3);
 INSERT INTO O_ID
 	VALUES (1,
-	7);
+	3);
 INSERT INTO O_ID
 	VALUES (2,
-	7);
+	3);
 INSERT INTO PE_PE
-	VALUES (13,
+	VALUES (6,
 	1,
 	2,
 	0,
 	4);
 INSERT INTO O_OBJ
-	VALUES (13,
+	VALUES (6,
 	'Boom',
 	3,
 	'Boom',
-	'',
+	'Automated gate barrier. It moves up and down to control the access of the car park. ',
 	0);
 INSERT INTO O_NBATTR
-	VALUES (14,
-	13);
+	VALUES (7,
+	6);
 INSERT INTO O_BATTR
-	VALUES (14,
-	13);
+	VALUES (7,
+	6);
 INSERT INTO O_ATTR
-	VALUES (14,
-	13,
-	0,
-	'Location',
-	'',
-	'',
-	'Location',
-	0,
-	5,
-	'',
-	'');
-INSERT INTO O_NBATTR
-	VALUES (15,
-	13);
-INSERT INTO O_BATTR
-	VALUES (15,
-	13);
-INSERT INTO O_ATTR
-	VALUES (15,
-	13,
-	14,
-	'Status',
-	'',
-	'',
-	'Status',
-	0,
-	5,
-	'',
-	'');
-INSERT INTO O_ID
-	VALUES (0,
-	13);
-INSERT INTO O_ID
-	VALUES (1,
-	13);
-INSERT INTO O_ID
-	VALUES (2,
-	13);
-INSERT INTO PE_PE
-	VALUES (16,
-	1,
-	2,
-	0,
-	4);
-INSERT INTO O_OBJ
-	VALUES (16,
-	'Vehicle',
-	4,
-	'Vehicle',
-	'',
-	0);
-INSERT INTO O_ID
-	VALUES (0,
-	16);
-INSERT INTO O_ID
-	VALUES (1,
-	16);
-INSERT INTO O_ID
-	VALUES (2,
-	16);
-INSERT INTO PE_PE
-	VALUES (17,
-	1,
-	2,
-	0,
-	4);
-INSERT INTO O_OBJ
-	VALUES (17,
-	'Customer',
-	5,
-	'Customer',
-	'',
-	0);
-INSERT INTO O_ID
-	VALUES (0,
-	17);
-INSERT INTO O_ID
-	VALUES (1,
-	17);
-INSERT INTO O_ID
-	VALUES (2,
-	17);
-INSERT INTO PE_PE
-	VALUES (18,
-	1,
-	2,
-	0,
-	4);
-INSERT INTO O_OBJ
-	VALUES (18,
-	'Alarm',
+	VALUES (7,
 	6,
-	'Alarm',
+	0,
+	'Raised',
+	'Represents the status of the boom, whether it was lowered to prevent any vehicle from passing through, or raised to allow them. 
+',
+	'',
+	'Raised',
+	0,
+	5,
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES (8,
+	6);
+INSERT INTO O_BATTR
+	VALUES (8,
+	6);
+INSERT INTO O_ATTR
+	VALUES (8,
+	6,
+	7,
+	'SerialNumber',
+	'A unique number that identifies the boom.',
+	'',
+	'SerialNumber',
+	0,
+	9,
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	6);
+INSERT INTO O_OIDA
+	VALUES (8,
+	6,
+	0,
+	'SerialNumber');
+INSERT INTO O_ID
+	VALUES (1,
+	6);
+INSERT INTO O_ID
+	VALUES (2,
+	6);
+INSERT INTO PE_PE
+	VALUES (10,
+	1,
+	2,
+	0,
+	4);
+INSERT INTO O_OBJ
+	VALUES (10,
+	'PaymentMachine',
+	11,
+	'PaymentMachine',
 	'',
 	0);
+INSERT INTO O_TFR
+	VALUES (11,
+	10,
+	'PaymentMachine',
+	'',
+	12,
+	0,
+	'//Initialize Payment Machine
+//Open Ticket Slot',
+	1,
+	'',
+	0,
+	0);
+INSERT INTO ACT_OPB
+	VALUES (13,
+	11);
+INSERT INTO ACT_ACT
+	VALUES (13,
+	'class operation',
+	0,
+	14,
+	0,
+	0,
+	'PaymentMachine::PaymentMachine',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (14,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	13,
+	0);
+INSERT INTO O_NBATTR
+	VALUES (15,
+	10);
+INSERT INTO O_BATTR
+	VALUES (15,
+	10);
+INSERT INTO O_ATTR
+	VALUES (15,
+	10,
+	0,
+	'current_state',
+	'',
+	'',
+	'current_state',
+	0,
+	16,
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES (17,
+	10);
+INSERT INTO O_BATTR
+	VALUES (17,
+	10);
+INSERT INTO O_ATTR
+	VALUES (17,
+	10,
+	15,
+	'IsTicketSlotOpen',
+	'',
+	'',
+	'IsTicketSlotOpen',
+	0,
+	5,
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES (18,
+	10);
+INSERT INTO O_BATTR
+	VALUES (18,
+	10);
+INSERT INTO O_ATTR
+	VALUES (18,
+	10,
+	17,
+	'IsCurrencySlotOpen',
+	'',
+	'',
+	'IsCurrencySlotOpen',
+	0,
+	5,
+	'',
+	'');
 INSERT INTO O_NBATTR
 	VALUES (19,
-	18);
+	10);
 INSERT INTO O_BATTR
 	VALUES (19,
-	18);
+	10);
 INSERT INTO O_ATTR
 	VALUES (19,
+	10,
 	18,
+	'Timer',
+	'',
+	'',
+	'Timer',
 	0,
-	'status',
+	9,
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	10);
+INSERT INTO O_ID
+	VALUES (1,
+	10);
+INSERT INTO O_ID
+	VALUES (2,
+	10);
+INSERT INTO SM_ISM
+	VALUES (20,
+	10);
+INSERT INTO SM_SM
+	VALUES (20,
+	'',
+	0);
+INSERT INTO SM_MOORE
+	VALUES (20);
+INSERT INTO SM_EVTDI
+	VALUES (21,
+	20,
+	'InsertedAmount',
+	'',
+	9,
+	'',
+	22,
+	0);
+INSERT INTO SM_EVTDI
+	VALUES (23,
+	20,
+	'InsertedAmount',
+	'',
+	9,
+	'',
+	24,
+	0);
+INSERT INTO SM_EVTDI
+	VALUES (25,
+	20,
+	'Fee',
+	'',
+	9,
+	'',
+	24,
+	23);
+INSERT INTO SM_EVTDI
+	VALUES (26,
+	20,
+	'TicketNumber',
+	'',
+	27,
+	'',
+	28,
+	0);
+INSERT INTO SM_EVTDI
+	VALUES (29,
+	20,
+	'TicketNumber',
+	'',
+	27,
+	'',
+	30,
+	0);
+INSERT INTO SM_EVTDI
+	VALUES (31,
+	20,
+	'TicketNumber',
+	'',
+	27,
+	'',
+	32,
+	0);
+INSERT INTO SM_LEVT
+	VALUES (33,
+	20,
+	0);
+INSERT INTO SM_SEVT
+	VALUES (33,
+	20,
+	0);
+INSERT INTO SM_EVT
+	VALUES (33,
+	20,
+	0,
+	10,
+	'Is Available',
+	0,
+	'',
+	'PaymentMachine10',
+	'');
+INSERT INTO SM_LEVT
+	VALUES (34,
+	20,
+	0);
+INSERT INTO SM_SEVT
+	VALUES (34,
+	20,
+	0);
+INSERT INTO SM_EVT
+	VALUES (34,
+	20,
+	0,
+	11,
+	'Is Unavailable',
+	0,
+	'',
+	'PaymentMachine11',
+	'');
+INSERT INTO SM_LEVT
+	VALUES (35,
+	20,
+	0);
+INSERT INTO SM_SEVT
+	VALUES (35,
+	20,
+	0);
+INSERT INTO SM_EVT
+	VALUES (35,
+	20,
+	0,
+	12,
+	'Accept Overpayment',
+	0,
+	'',
+	'PaymentMachine12',
+	'');
+INSERT INTO SM_LEVT
+	VALUES (22,
+	20,
+	0);
+INSERT INTO SM_SEVT
+	VALUES (22,
+	20,
+	0);
+INSERT INTO SM_EVT
+	VALUES (22,
+	20,
+	0,
+	14,
+	'Cancel',
+	0,
+	'',
+	'PaymentMachine14',
+	'');
+INSERT INTO SM_LEVT
+	VALUES (28,
+	20,
+	0);
+INSERT INTO SM_SEVT
+	VALUES (28,
+	20,
+	0);
+INSERT INTO SM_EVT
+	VALUES (28,
+	20,
+	0,
+	15,
+	'Insert Ticket ',
+	0,
+	'',
+	'PaymentMachine15',
+	'');
+INSERT INTO SM_LEVT
+	VALUES (36,
+	20,
+	0);
+INSERT INTO SM_SEVT
+	VALUES (36,
+	20,
+	0);
+INSERT INTO SM_EVT
+	VALUES (36,
+	20,
+	0,
+	17,
+	'Completed',
+	0,
+	'',
+	'PaymentMachine17',
+	'');
+INSERT INTO SM_LEVT
+	VALUES (37,
+	20,
+	0);
+INSERT INTO SM_SEVT
+	VALUES (37,
+	20,
+	0);
+INSERT INTO SM_EVT
+	VALUES (37,
+	20,
+	0,
+	18,
+	'Insert Currency',
+	0,
+	'',
+	'PaymentMachine18',
+	'');
+INSERT INTO SM_LEVT
+	VALUES (30,
+	20,
+	0);
+INSERT INTO SM_SEVT
+	VALUES (30,
+	20,
+	0);
+INSERT INTO SM_EVT
+	VALUES (30,
+	20,
+	0,
+	19,
+	'Rejected',
+	0,
+	'',
+	'PaymentMachine19',
+	'');
+INSERT INTO SM_LEVT
+	VALUES (24,
+	20,
+	0);
+INSERT INTO SM_SEVT
+	VALUES (24,
+	20,
+	0);
+INSERT INTO SM_EVT
+	VALUES (24,
+	20,
+	0,
+	20,
+	'Accepted',
+	0,
+	'',
+	'PaymentMachine20',
+	'');
+INSERT INTO SM_LEVT
+	VALUES (38,
+	20,
+	0);
+INSERT INTO SM_SEVT
+	VALUES (38,
+	20,
+	0);
+INSERT INTO SM_EVT
+	VALUES (38,
+	20,
+	0,
+	21,
+	'Timer Expried',
+	0,
+	'',
+	'PaymentMachine21',
+	'');
+INSERT INTO SM_LEVT
+	VALUES (32,
+	20,
+	0);
+INSERT INTO SM_SEVT
+	VALUES (32,
+	20,
+	0);
+INSERT INTO SM_EVT
+	VALUES (32,
+	20,
+	0,
+	22,
+	'Currency Less than Required ',
+	0,
+	'',
+	'PaymentMachine22',
+	'');
+INSERT INTO SM_STATE
+	VALUES (39,
+	20,
+	0,
+	'Waiting for Ticket',
+	1,
+	0);
+INSERT INTO SM_CH
+	VALUES (39,
+	33,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (39,
+	33,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (39,
+	34,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (39,
+	34,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (39,
+	35,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (39,
+	35,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (39,
+	22,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (39,
+	22,
+	20,
+	0);
+INSERT INTO SM_SEME
+	VALUES (39,
+	28,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (39,
+	36,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (39,
+	36,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (39,
+	37,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (39,
+	37,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (39,
+	30,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (39,
+	30,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (39,
+	24,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (39,
+	24,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (39,
+	38,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (39,
+	38,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (39,
+	32,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (39,
+	32,
+	20,
+	0);
+INSERT INTO SM_MOAH
+	VALUES (40,
+	20,
+	39);
+INSERT INTO SM_AH
+	VALUES (40,
+	20);
+INSERT INTO SM_ACT
+	VALUES (40,
+	20,
+	1,
+	'// open ticket slot to allow user to enter ticket
+if(not self.IsTicketSlotOpen)
+	self.IsTicketSlotOpen=true;
+end if;
+',
+	'',
+	0);
+INSERT INTO ACT_SAB
+	VALUES (41,
+	20,
+	40);
+INSERT INTO ACT_ACT
+	VALUES (41,
+	'state',
+	0,
+	42,
+	0,
+	0,
+	'PaymentMachine::Waiting for Ticket',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (42,
+	0,
+	0,
+	0,
 	'',
 	'',
-	'status',
+	'',
+	2,
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	41,
+	0);
+INSERT INTO ACT_SMT
+	VALUES (43,
+	42,
+	0,
+	2,
+	1,
+	'PaymentMachine::Waiting for Ticket line: 2');
+INSERT INTO ACT_IF
+	VALUES (43,
+	44,
+	45,
+	0,
+	0);
+INSERT INTO V_VAL
+	VALUES (46,
+	0,
+	0,
+	2,
+	8,
+	11,
+	0,
+	0,
+	0,
+	0,
+	47,
+	42);
+INSERT INTO V_IRF
+	VALUES (46,
+	48);
+INSERT INTO V_VAL
+	VALUES (49,
+	0,
+	0,
+	2,
+	13,
+	28,
+	0,
+	0,
+	0,
+	0,
+	5,
+	42);
+INSERT INTO V_AVL
+	VALUES (49,
+	46,
+	10,
+	17);
+INSERT INTO V_VAL
+	VALUES (45,
+	0,
+	0,
+	-1,
+	-1,
+	-1,
+	0,
+	0,
+	0,
+	0,
+	5,
+	42);
+INSERT INTO V_UNY
+	VALUES (45,
+	49,
+	'not');
+INSERT INTO V_VAR
+	VALUES (48,
+	42,
+	'self',
+	1,
+	47);
+INSERT INTO V_INT
+	VALUES (48,
+	0,
+	10);
+INSERT INTO ACT_BLK
+	VALUES (44,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	3,
+	2,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	41,
+	0);
+INSERT INTO ACT_SMT
+	VALUES (50,
+	44,
+	0,
+	3,
+	2,
+	'PaymentMachine::Waiting for Ticket line: 3');
+INSERT INTO ACT_AI
+	VALUES (50,
+	51,
+	52,
+	0,
+	0);
+INSERT INTO V_VAL
+	VALUES (53,
+	1,
+	0,
+	3,
+	2,
+	5,
+	0,
+	0,
+	0,
+	0,
+	47,
+	44);
+INSERT INTO V_IRF
+	VALUES (53,
+	48);
+INSERT INTO V_VAL
+	VALUES (52,
+	1,
+	0,
+	3,
+	7,
+	22,
+	0,
+	0,
+	0,
+	0,
+	5,
+	44);
+INSERT INTO V_AVL
+	VALUES (52,
+	53,
+	10,
+	17);
+INSERT INTO V_VAL
+	VALUES (51,
+	0,
+	0,
+	-1,
+	-1,
+	-1,
+	0,
+	0,
+	0,
+	0,
+	5,
+	44);
+INSERT INTO V_LBO
+	VALUES (51,
+	'TRUE');
+INSERT INTO SM_STATE
+	VALUES (54,
+	20,
+	0,
+	'Cancel Transaction',
+	4,
+	0);
+INSERT INTO SM_CH
+	VALUES (54,
+	33,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (54,
+	33,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (54,
+	34,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (54,
+	34,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (54,
+	35,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (54,
+	35,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (54,
+	22,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (54,
+	22,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (54,
+	28,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (54,
+	28,
+	20,
+	0);
+INSERT INTO SM_SEME
+	VALUES (54,
+	36,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (54,
+	37,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (54,
+	37,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (54,
+	30,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (54,
+	30,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (54,
+	24,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (54,
+	24,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (54,
+	38,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (54,
+	38,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (54,
+	32,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (54,
+	32,
+	20,
+	0);
+INSERT INTO SM_MOAH
+	VALUES (55,
+	20,
+	54);
+INSERT INTO SM_AH
+	VALUES (55,
+	20);
+INSERT INTO SM_ACT
+	VALUES (55,
+	20,
+	1,
+	'//Close currency slot to prevent the user from inserting more money while the transaction is being canceled. 
+//return inserted amount to the user
+//return ticket  
+
+//CloseCurrencySlot() 
+// ReturnMoney(InsertedAmount:real)
+// ReturnTicket() 
+',
+	'',
+	0);
+INSERT INTO ACT_SAB
+	VALUES (56,
+	20,
+	55);
+INSERT INTO ACT_ACT
+	VALUES (56,
+	'state',
+	0,
+	57,
+	0,
+	0,
+	'PaymentMachine::Cancel Transaction',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (57,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	56,
+	0);
+INSERT INTO SM_STATE
+	VALUES (58,
+	20,
+	0,
+	'Check Currency',
+	5,
+	0);
+INSERT INTO SM_CH
+	VALUES (58,
+	28,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (58,
+	28,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (58,
+	36,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (58,
+	36,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (58,
+	37,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (58,
+	37,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (58,
+	30,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (58,
+	30,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (58,
+	24,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (58,
+	24,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (58,
+	38,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (58,
+	38,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (58,
+	32,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (58,
+	32,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (58,
+	33,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (58,
+	33,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (58,
+	34,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (58,
+	34,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (58,
+	35,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (58,
+	35,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (58,
+	22,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (58,
+	22,
+	20,
+	0);
+INSERT INTO SM_MOAH
+	VALUES (59,
+	20,
+	58);
+INSERT INTO SM_AH
+	VALUES (59,
+	20);
+INSERT INTO SM_ACT
+	VALUES (59,
+	20,
+	1,
+	'//Cancel the timer
+//Reject the inserted currency if it is not money or damaged or not the required currency.
+//return  inserted currency
+//Accept the inserted currency if not damged and the required currancy.
+
+//IsAccepted():boolean
+',
+	'',
+	0);
+INSERT INTO ACT_SAB
+	VALUES (60,
+	20,
+	59);
+INSERT INTO ACT_ACT
+	VALUES (60,
+	'state',
+	0,
+	61,
+	0,
+	0,
+	'PaymentMachine::Check Currency',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (61,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	60,
+	0);
+INSERT INTO SM_STATE
+	VALUES (62,
+	20,
+	0,
+	'Currency Inserted',
+	6,
+	0);
+INSERT INTO SM_CH
+	VALUES (62,
+	28,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (62,
+	28,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (62,
+	36,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (62,
+	36,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (62,
+	37,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (62,
+	37,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (62,
+	30,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (62,
+	30,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (62,
+	24,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (62,
+	24,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (62,
+	38,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (62,
+	38,
+	20,
+	0);
+INSERT INTO SM_SEME
+	VALUES (62,
+	32,
+	20,
+	0);
+INSERT INTO SM_SEME
+	VALUES (62,
+	33,
+	20,
+	0);
+INSERT INTO SM_SEME
+	VALUES (62,
+	34,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (62,
+	35,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (62,
+	35,
+	20,
+	0);
+INSERT INTO SM_SEME
+	VALUES (62,
+	22,
+	20,
+	0);
+INSERT INTO SM_MOAH
+	VALUES (63,
+	20,
+	62);
+INSERT INTO SM_AH
+	VALUES (63,
+	20);
+INSERT INTO SM_ACT
+	VALUES (63,
+	20,
+	1,
+	'//Close the currency slot to prevent the user form entering more money.
+//CalculateCurrency(InsertedAmount:real,Fee:real)
+//Calculate if the currency is less or eqaul or more than the reqried fee.
+// if the currency is More then the reqried fee check if the machine has available change to return to the user.
+//CloseCurrencySlot()
+',
+	'',
+	0);
+INSERT INTO ACT_SAB
+	VALUES (64,
+	20,
+	63);
+INSERT INTO ACT_ACT
+	VALUES (64,
+	'state',
+	0,
+	65,
+	0,
+	0,
+	'PaymentMachine::Currency Inserted',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (65,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	64,
+	0);
+INSERT INTO SM_STATE
+	VALUES (66,
+	20,
+	0,
+	'OverPayment',
+	9,
+	0);
+INSERT INTO SM_CH
+	VALUES (66,
+	28,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (66,
+	28,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (66,
+	36,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (66,
+	36,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (66,
+	37,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (66,
+	37,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (66,
+	30,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (66,
+	30,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (66,
+	24,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (66,
+	24,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (66,
+	38,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (66,
+	38,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (66,
+	32,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (66,
+	32,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (66,
+	33,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (66,
+	33,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (66,
+	34,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (66,
+	34,
+	20,
+	0);
+INSERT INTO SM_SEME
+	VALUES (66,
+	35,
+	20,
+	0);
+INSERT INTO SM_SEME
+	VALUES (66,
+	22,
+	20,
+	0);
+INSERT INTO SM_MOAH
+	VALUES (67,
+	20,
+	66);
+INSERT INTO SM_AH
+	VALUES (67,
+	20);
+INSERT INTO SM_ACT
+	VALUES (67,
+	20,
+	1,
+	'//Show message to the user "no avilable change"
+//Prompt the user to accept overpayment or cancel the transaction then wait for user input',
+	'',
+	0);
+INSERT INTO ACT_SAB
+	VALUES (68,
+	20,
+	67);
+INSERT INTO ACT_ACT
+	VALUES (68,
+	'state',
+	0,
+	69,
+	0,
+	0,
+	'PaymentMachine::OverPayment',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (69,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	68,
+	0);
+INSERT INTO SM_STATE
+	VALUES (70,
+	20,
+	0,
+	'Print ExitDeadLine',
+	11,
+	0);
+INSERT INTO SM_CH
+	VALUES (70,
+	28,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (70,
+	28,
+	20,
+	0);
+INSERT INTO SM_SEME
+	VALUES (70,
+	36,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (70,
+	37,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (70,
+	37,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (70,
+	30,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (70,
+	30,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (70,
+	24,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (70,
+	24,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (70,
+	38,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (70,
+	38,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (70,
+	32,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (70,
+	32,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (70,
+	33,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (70,
+	33,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (70,
+	34,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (70,
+	34,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (70,
+	35,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (70,
+	35,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (70,
+	22,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (70,
+	22,
+	20,
+	0);
+INSERT INTO SM_MOAH
+	VALUES (71,
+	20,
+	70);
+INSERT INTO SM_AH
+	VALUES (71,
+	20);
+INSERT INTO SM_ACT
+	VALUES (71,
+	20,
+	1,
+	'// Calculate ExitDeadline => Current time + 15 min
+//Print ExitDeadline on the ticket 
+
+//CalculateExitDeadLine()
+// PrintOnTicket(ExitDeadLine:integer)
+',
+	'',
+	0);
+INSERT INTO ACT_SAB
+	VALUES (72,
+	20,
+	71);
+INSERT INTO ACT_ACT
+	VALUES (72,
+	'state',
+	0,
+	73,
+	0,
+	0,
+	'PaymentMachine::Print ExitDeadLine',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (73,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	72,
+	0);
+INSERT INTO SM_STATE
+	VALUES (74,
+	20,
+	0,
+	'Waiting for Payment',
+	3,
+	0);
+INSERT INTO SM_CH
+	VALUES (74,
+	28,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (74,
+	28,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (74,
+	36,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (74,
+	36,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (74,
+	37,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (74,
+	37,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (74,
+	30,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (74,
+	30,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (74,
+	24,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (74,
+	24,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (74,
+	38,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (74,
+	38,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (74,
+	32,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (74,
+	32,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (74,
+	33,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (74,
+	33,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (74,
+	34,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (74,
+	34,
+	20,
+	0);
+INSERT INTO SM_CH
+	VALUES (74,
+	35,
+	20,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (74,
+	35,
+	20,
+	0);
+INSERT INTO SM_SEME
+	VALUES (74,
+	22,
+	20,
+	0);
+INSERT INTO SM_MOAH
+	VALUES (75,
+	20,
+	74);
+INSERT INTO SM_AH
+	VALUES (75,
+	20);
+INSERT INTO SM_ACT
+	VALUES (75,
+	20,
+	1,
+	'//Display the required fee to the user
+select any ticket from Ticket where selected.ID == param.TicketNumber;
+//open currency slot to allow the user to enter currency
+// start timer of 30 secends to wait for payment
+
+//
+// DisplayFee(Fee:real)
+// OpenCurrencySlot()
+// StartTimer(Sec:integer)
+',
+	'',
+	0);
+INSERT INTO ACT_SAB
+	VALUES (76,
+	20,
+	75);
+INSERT INTO ACT_ACT
+	VALUES (76,
+	'state',
+	0,
+	77,
+	0,
+	0,
+	'PaymentMachine::Waiting for Payment',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (77,
+	1,
+	0,
+	1,
+	'',
+	'',
+	'',
+	2,
+	1,
+	2,
+	24,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	76,
+	0);
+INSERT INTO ACT_SMT
+	VALUES (78,
+	77,
+	0,
+	2,
+	1,
+	'PaymentMachine::Waiting for Payment line: 2');
+INSERT INTO ACT_FIW
+	VALUES (78,
+	79,
+	1,
+	'any',
+	80,
+	81,
+	2,
+	24);
+INSERT INTO V_VAL
+	VALUES (82,
+	0,
+	0,
+	2,
+	37,
+	-1,
+	0,
+	0,
+	0,
+	0,
+	47,
+	77);
+INSERT INTO V_SLR
+	VALUES (82,
+	0,
+	0,
+	0);
+INSERT INTO V_VAL
+	VALUES (83,
+	0,
+	0,
+	2,
+	46,
+	47,
+	0,
+	0,
+	0,
+	0,
+	27,
+	77);
+INSERT INTO V_AVL
+	VALUES (83,
+	82,
+	81,
+	84);
+INSERT INTO V_VAL
+	VALUES (80,
+	0,
+	0,
+	2,
+	46,
+	69,
+	0,
+	0,
+	0,
+	0,
+	5,
+	77);
+INSERT INTO V_BIN
+	VALUES (80,
+	85,
+	83,
+	'==');
+INSERT INTO V_VAL
+	VALUES (85,
+	0,
+	0,
+	2,
+	58,
+	69,
+	0,
+	0,
+	0,
+	0,
+	27,
+	77);
+INSERT INTO V_EDV
+	VALUES (85);
+INSERT INTO V_EPR
+	VALUES (85,
+	20,
+	26,
+	0);
+INSERT INTO V_EPR
+	VALUES (85,
+	20,
+	29,
+	0);
+INSERT INTO V_EPR
+	VALUES (85,
+	20,
+	31,
+	0);
+INSERT INTO V_VAR
+	VALUES (79,
+	77,
+	'ticket',
+	1,
+	47);
+INSERT INTO V_INT
+	VALUES (79,
+	0,
+	81);
+INSERT INTO SM_NSTXN
+	VALUES (86,
+	20,
+	39,
+	28,
+	0);
+INSERT INTO SM_TAH
+	VALUES (87,
+	20,
+	86);
+INSERT INTO SM_AH
+	VALUES (87,
+	20);
+INSERT INTO SM_ACT
+	VALUES (87,
+	20,
+	1,
+	'//Close ticket slot to prevent the user from inserting more than one ticket until the transaction is completed. 
+self.IsTicketSlotOpen=false;
+',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (88,
+	20,
+	87);
+INSERT INTO ACT_ACT
+	VALUES (88,
+	'transition',
+	0,
+	89,
+	0,
+	0,
+	'PaymentMachine15: Insert Ticket ',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (89,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	2,
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	88,
+	0);
+INSERT INTO ACT_SMT
+	VALUES (90,
+	89,
+	0,
+	2,
+	1,
+	'PaymentMachine15: Insert Ticket  line: 2');
+INSERT INTO ACT_AI
+	VALUES (90,
+	91,
+	92,
+	0,
+	0);
+INSERT INTO V_VAL
+	VALUES (93,
+	1,
+	0,
+	2,
+	1,
+	4,
+	0,
+	0,
+	0,
+	0,
+	47,
+	89);
+INSERT INTO V_IRF
+	VALUES (93,
+	94);
+INSERT INTO V_VAL
+	VALUES (92,
+	1,
+	0,
+	2,
+	6,
+	21,
+	0,
+	0,
+	0,
+	0,
+	5,
+	89);
+INSERT INTO V_AVL
+	VALUES (92,
+	93,
+	10,
+	17);
+INSERT INTO V_VAL
+	VALUES (91,
+	0,
+	0,
+	-1,
+	-1,
+	-1,
+	0,
+	0,
+	0,
+	0,
+	5,
+	89);
+INSERT INTO V_LBO
+	VALUES (91,
+	'FALSE');
+INSERT INTO V_VAR
+	VALUES (94,
+	89,
+	'self',
+	1,
+	47);
+INSERT INTO V_INT
+	VALUES (94,
+	0,
+	10);
+INSERT INTO SM_TXN
+	VALUES (86,
+	20,
+	74,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (95,
+	20,
+	74,
+	38,
+	0);
+INSERT INTO SM_TAH
+	VALUES (96,
+	20,
+	95);
+INSERT INTO SM_AH
+	VALUES (96,
+	20);
+INSERT INTO SM_ACT
+	VALUES (96,
+	20,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (97,
+	20,
+	96);
+INSERT INTO ACT_ACT
+	VALUES (97,
+	'transition',
+	0,
+	98,
+	0,
+	0,
+	'PaymentMachine21: Timer Expried',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (98,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	97,
+	0);
+INSERT INTO SM_TXN
+	VALUES (95,
+	20,
+	54,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (99,
+	20,
+	74,
+	37,
+	0);
+INSERT INTO SM_TAH
+	VALUES (100,
+	20,
+	99);
+INSERT INTO SM_AH
+	VALUES (100,
+	20);
+INSERT INTO SM_ACT
+	VALUES (100,
+	20,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (101,
+	20,
+	100);
+INSERT INTO ACT_ACT
+	VALUES (101,
+	'transition',
+	0,
+	102,
+	0,
+	0,
+	'PaymentMachine18: Insert Currency',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (102,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	101,
+	0);
+INSERT INTO SM_TXN
+	VALUES (99,
+	20,
+	58,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (103,
+	20,
+	58,
+	30,
+	0);
+INSERT INTO SM_TAH
+	VALUES (104,
+	20,
+	103);
+INSERT INTO SM_AH
+	VALUES (104,
+	20);
+INSERT INTO SM_ACT
+	VALUES (104,
+	20,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (105,
+	20,
+	104);
+INSERT INTO ACT_ACT
+	VALUES (105,
+	'transition',
+	0,
+	106,
+	0,
+	0,
+	'PaymentMachine19: Rejected',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (106,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	105,
+	0);
+INSERT INTO SM_TXN
+	VALUES (103,
+	20,
+	74,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (107,
+	20,
+	58,
+	24,
+	0);
+INSERT INTO SM_TAH
+	VALUES (108,
+	20,
+	107);
+INSERT INTO SM_AH
+	VALUES (108,
+	20);
+INSERT INTO SM_ACT
+	VALUES (108,
+	20,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (109,
+	20,
+	108);
+INSERT INTO ACT_ACT
+	VALUES (109,
+	'transition',
+	0,
+	110,
+	0,
+	0,
+	'PaymentMachine20: Accepted',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (110,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	109,
+	0);
+INSERT INTO SM_TXN
+	VALUES (107,
+	20,
+	62,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (111,
+	20,
+	62,
+	32,
+	0);
+INSERT INTO SM_TAH
+	VALUES (112,
+	20,
+	111);
+INSERT INTO SM_AH
+	VALUES (112,
+	20);
+INSERT INTO SM_ACT
+	VALUES (112,
+	20,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (113,
+	20,
+	112);
+INSERT INTO ACT_ACT
+	VALUES (113,
+	'transition',
+	0,
+	114,
+	0,
+	0,
+	'PaymentMachine22: Currency Less than Required ',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (114,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	113,
+	0);
+INSERT INTO SM_TXN
+	VALUES (111,
+	20,
+	74,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (115,
+	20,
+	66,
+	35,
+	0);
+INSERT INTO SM_TAH
+	VALUES (116,
+	20,
+	115);
+INSERT INTO SM_AH
+	VALUES (116,
+	20);
+INSERT INTO SM_ACT
+	VALUES (116,
+	20,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (117,
+	20,
+	116);
+INSERT INTO ACT_ACT
+	VALUES (117,
+	'transition',
+	0,
+	118,
+	0,
+	0,
+	'PaymentMachine12: Accept Overpayment',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (118,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	117,
+	0);
+INSERT INTO SM_TXN
+	VALUES (115,
+	20,
+	70,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (119,
+	20,
+	70,
+	36,
+	0);
+INSERT INTO SM_TAH
+	VALUES (120,
+	20,
+	119);
+INSERT INTO SM_AH
+	VALUES (120,
+	20);
+INSERT INTO SM_ACT
+	VALUES (120,
+	20,
+	1,
+	'// Calculate ExitDeadline => Current time + 15 min
+//Print ExitDeadline on the ticket 
+//return ticket  
+//CalculateExitDeadLine()
+// PrintOnTicket(ExitDeadLine:integer)
+
+',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (121,
+	20,
+	120);
+INSERT INTO ACT_ACT
+	VALUES (121,
+	'transition',
+	0,
+	122,
+	0,
+	0,
+	'PaymentMachine17: Completed',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (122,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	121,
+	0);
+INSERT INTO SM_TXN
+	VALUES (119,
+	20,
+	39,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (123,
+	20,
+	66,
+	22,
+	0);
+INSERT INTO SM_TAH
+	VALUES (124,
+	20,
+	123);
+INSERT INTO SM_AH
+	VALUES (124,
+	20);
+INSERT INTO SM_ACT
+	VALUES (124,
+	20,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (125,
+	20,
+	124);
+INSERT INTO ACT_ACT
+	VALUES (125,
+	'transition',
+	0,
+	126,
+	0,
+	0,
+	'PaymentMachine14: Cancel',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (126,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	125,
+	0);
+INSERT INTO SM_TXN
+	VALUES (123,
+	20,
+	54,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (127,
+	20,
+	62,
+	22,
+	0);
+INSERT INTO SM_TAH
+	VALUES (128,
+	20,
+	127);
+INSERT INTO SM_AH
+	VALUES (128,
+	20);
+INSERT INTO SM_ACT
+	VALUES (128,
+	20,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (129,
+	20,
+	128);
+INSERT INTO ACT_ACT
+	VALUES (129,
+	'transition',
+	0,
+	130,
+	0,
+	0,
+	'PaymentMachine14: Cancel',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (130,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	129,
+	0);
+INSERT INTO SM_TXN
+	VALUES (127,
+	20,
+	54,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (131,
+	20,
+	74,
+	22,
+	0);
+INSERT INTO SM_TAH
+	VALUES (132,
+	20,
+	131);
+INSERT INTO SM_AH
+	VALUES (132,
+	20);
+INSERT INTO SM_ACT
+	VALUES (132,
+	20,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (133,
+	20,
+	132);
+INSERT INTO ACT_ACT
+	VALUES (133,
+	'transition',
+	0,
+	134,
+	0,
+	0,
+	'PaymentMachine14: Cancel',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (134,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	133,
+	0);
+INSERT INTO SM_TXN
+	VALUES (131,
+	20,
+	54,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (135,
+	20,
+	54,
+	36,
+	0);
+INSERT INTO SM_TAH
+	VALUES (136,
+	20,
+	135);
+INSERT INTO SM_AH
+	VALUES (136,
+	20);
+INSERT INTO SM_ACT
+	VALUES (136,
+	20,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (137,
+	20,
+	136);
+INSERT INTO ACT_ACT
+	VALUES (137,
+	'transition',
+	0,
+	138,
+	0,
+	0,
+	'PaymentMachine17: Completed',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (138,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	137,
+	0);
+INSERT INTO SM_TXN
+	VALUES (135,
+	20,
+	39,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (139,
+	20,
+	62,
+	34,
+	0);
+INSERT INTO SM_TAH
+	VALUES (140,
+	20,
+	139);
+INSERT INTO SM_AH
+	VALUES (140,
+	20);
+INSERT INTO SM_ACT
+	VALUES (140,
+	20,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (141,
+	20,
+	140);
+INSERT INTO ACT_ACT
+	VALUES (141,
+	'transition',
+	0,
+	142,
+	0,
+	0,
+	'PaymentMachine11: Is Unavailable',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (142,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	141,
+	0);
+INSERT INTO SM_TXN
+	VALUES (139,
+	20,
+	66,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (143,
+	20,
+	62,
+	33,
+	0);
+INSERT INTO SM_TAH
+	VALUES (144,
+	20,
+	143);
+INSERT INTO SM_AH
+	VALUES (144,
+	20);
+INSERT INTO SM_ACT
+	VALUES (144,
+	20,
+	1,
+	'DliverChange()',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (145,
+	20,
+	144);
+INSERT INTO ACT_ACT
+	VALUES (145,
+	'transition',
+	0,
+	146,
+	0,
+	0,
+	'PaymentMachine10: Is Available',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (146,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	1,
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	145,
+	0);
+INSERT INTO SM_TXN
+	VALUES (143,
+	20,
+	70,
+	0);
+INSERT INTO PE_PE
+	VALUES (147,
+	1,
+	2,
+	0,
+	4);
+INSERT INTO O_OBJ
+	VALUES (147,
+	'Slot',
+	7,
+	'Slot',
+	'An area that the car occupies in the carpark. 
+',
+	0);
+INSERT INTO O_NBATTR
+	VALUES (148,
+	147);
+INSERT INTO O_BATTR
+	VALUES (148,
+	147);
+INSERT INTO O_ATTR
+	VALUES (148,
+	147,
+	0,
+	'ID',
+	'An arbitrary number identifying the parking slot, this value is visibly displayed at the physical slot.',
+	'',
+	'ID',
+	0,
+	9,
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES (149,
+	147);
+INSERT INTO O_BATTR
+	VALUES (149,
+	147);
+INSERT INTO O_ATTR
+	VALUES (149,
+	147,
+	148,
+	'IsOccupied',
+	'Occupied when the car occupies the slot; empty otherwise.',
+	'',
+	'IsOccupied',
 	0,
 	5,
 	'',
 	'');
 INSERT INTO O_ID
 	VALUES (0,
-	18);
+	147);
+INSERT INTO O_OIDA
+	VALUES (148,
+	147,
+	0,
+	'ID');
 INSERT INTO O_ID
 	VALUES (1,
-	18);
+	147);
 INSERT INTO O_ID
 	VALUES (2,
-	18);
+	147);
 INSERT INTO PE_PE
-	VALUES (20,
+	VALUES (150,
+	1,
+	2,
+	0,
+	4);
+INSERT INTO O_OBJ
+	VALUES (150,
+	'TicketRequestButton',
+	8,
+	'TicketRequestButton',
+	'The button that enables the cutomer to request a ticket.',
+	0);
+INSERT INTO O_NBATTR
+	VALUES (151,
+	150);
+INSERT INTO O_BATTR
+	VALUES (151,
+	150);
+INSERT INTO O_ATTR
+	VALUES (151,
+	150,
+	0,
+	'Enabled',
+	'',
+	'',
+	'Enabled',
+	0,
+	5,
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	150);
+INSERT INTO O_ID
+	VALUES (1,
+	150);
+INSERT INTO O_ID
+	VALUES (2,
+	150);
+INSERT INTO PE_PE
+	VALUES (81,
+	1,
+	2,
+	0,
+	4);
+INSERT INTO O_OBJ
+	VALUES (81,
+	'Ticket',
+	2,
+	'Ticket',
+	'A record contains information about the vehicle entry and exit of the car park. The ticket is initiated once the ticket button is pressed. and issued if the car park is not full.',
+	0);
+INSERT INTO O_NBATTR
+	VALUES (84,
+	81);
+INSERT INTO O_BATTR
+	VALUES (84,
+	81);
+INSERT INTO O_ATTR
+	VALUES (84,
+	81,
+	0,
+	'ID',
+	'',
+	'',
+	'ID',
+	0,
+	27,
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES (152,
+	81);
+INSERT INTO O_BATTR
+	VALUES (152,
+	81);
+INSERT INTO O_ATTR
+	VALUES (152,
+	81,
+	84,
+	'EntryDateTime',
+	'The date and time when the ticket was issued.
+unit: seconds
+origin: start of epoch 
+',
+	'',
+	'EntryDateTime',
+	0,
+	9,
+	'',
+	'');
+INSERT INTO O_DBATTR
+	VALUES (153,
+	81,
+	'',
+	1,
+	0);
+INSERT INTO ACT_DAB
+	VALUES (154,
+	81,
+	153,
+	0);
+INSERT INTO ACT_ACT
+	VALUES (154,
+	'derived attribute',
+	0,
+	155,
+	0,
+	0,
+	'Ticket::Fee',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (155,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	154,
+	0);
+INSERT INTO O_BATTR
+	VALUES (153,
+	81);
+INSERT INTO O_ATTR
+	VALUES (153,
+	81,
+	152,
+	'Fee',
+	'The required amount to pay for a visit to the  park..
+unit: Saudi Riyal
+',
+	'',
+	'Fee',
+	0,
+	156,
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES (157,
+	81);
+INSERT INTO O_BATTR
+	VALUES (157,
+	81);
+INSERT INTO O_ATTR
+	VALUES (157,
+	81,
+	153,
+	'IsPaid',
+	'Indicates the status of the payment.
+True when the fee for the stay has been paid; false otherwise.
+',
+	'',
+	'IsPaid',
+	0,
+	5,
+	'',
+	'');
+INSERT INTO O_DBATTR
+	VALUES (158,
+	81,
+	'',
+	1,
+	0);
+INSERT INTO ACT_DAB
+	VALUES (159,
+	81,
+	158,
+	0);
+INSERT INTO ACT_ACT
+	VALUES (159,
+	'derived attribute',
+	0,
+	160,
+	0,
+	0,
+	'Ticket::ExitDeadline',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (160,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	159,
+	0);
+INSERT INTO O_BATTR
+	VALUES (158,
+	81);
+INSERT INTO O_ATTR
+	VALUES (158,
+	81,
+	157,
+	'ExitDeadline',
+	'The date and time when the car must exit the car park to avoid incurring an additional fee.
+unit: seconds
+origin: start of epoch
+',
+	'',
+	'ExitDeadline',
+	0,
+	9,
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES (161,
+	81);
+INSERT INTO O_BATTR
+	VALUES (161,
+	81);
+INSERT INTO O_ATTR
+	VALUES (161,
+	81,
+	158,
+	'ExitDateTime',
+	'The date and time when the car exited the car park 
+unit: seconds
+origin: start of epoch 
+
+',
+	'',
+	'ExitDateTime',
+	0,
+	9,
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES (162,
+	81);
+INSERT INTO O_BATTR
+	VALUES (162,
+	81);
+INSERT INTO O_ATTR
+	VALUES (162,
+	81,
+	161,
+	'Status',
+	'Issued once the ticket is printed out; queued if the car park is full
+',
+	'',
+	'Status',
+	0,
+	163,
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	81);
+INSERT INTO O_OIDA
+	VALUES (84,
+	81,
+	0,
+	'ID');
+INSERT INTO O_ID
+	VALUES (1,
+	81);
+INSERT INTO O_ID
+	VALUES (2,
+	81);
+INSERT INTO PE_PE
+	VALUES (164,
+	1,
+	2,
+	0,
+	4);
+INSERT INTO O_OBJ
+	VALUES (164,
+	'Stand',
+	10,
+	'Stand',
+	'Represents a physical entry or exit stand within the car park.
+',
+	0);
+INSERT INTO O_NBATTR
+	VALUES (165,
+	164);
+INSERT INTO O_BATTR
+	VALUES (165,
+	164);
+INSERT INTO O_ATTR
+	VALUES (165,
+	164,
+	0,
+	'Type',
+	'The function of the stand in the car park. 
+',
+	'',
+	'Type',
+	0,
+	166,
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES (167,
+	164);
+INSERT INTO O_BATTR
+	VALUES (167,
+	164);
+INSERT INTO O_ATTR
+	VALUES (167,
+	164,
+	165,
+	'Location',
+	'The place where the stand is installed in the car park. 
+',
+	'',
+	'Location',
+	0,
+	168,
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES (169,
+	164);
+INSERT INTO O_BATTR
+	VALUES (169,
+	164);
+INSERT INTO O_ATTR
+	VALUES (169,
+	164,
+	167,
+	'Lane',
+	'A number to identify the lane at the entry/exit point.',
+	'',
+	'Lane',
+	0,
+	9,
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	164);
+INSERT INTO O_OIDA
+	VALUES (165,
+	164,
+	0,
+	'Type');
+INSERT INTO O_OIDA
+	VALUES (167,
+	164,
+	0,
+	'Location');
+INSERT INTO O_OIDA
+	VALUES (169,
+	164,
+	0,
+	'Lane');
+INSERT INTO O_ID
+	VALUES (1,
+	164);
+INSERT INTO O_ID
+	VALUES (2,
+	164);
+INSERT INTO PE_PE
+	VALUES (170,
+	1,
+	2,
+	0,
+	4);
+INSERT INTO O_OBJ
+	VALUES (170,
+	'Sensor',
+	1,
+	'Sensor',
+	'Electronic device used to detect the presence of the vehicle.',
+	0);
+INSERT INTO O_NBATTR
+	VALUES (171,
+	170);
+INSERT INTO O_BATTR
+	VALUES (171,
+	170);
+INSERT INTO O_ATTR
+	VALUES (171,
+	170,
+	0,
+	'Type',
+	'Represents the sensor''s function in the carpark.',
+	'',
+	'Type',
+	0,
+	172,
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES (173,
+	170);
+INSERT INTO O_BATTR
+	VALUES (173,
+	170);
+INSERT INTO O_ATTR
+	VALUES (173,
+	170,
+	171,
+	'SerialNumber',
+	'a unique number that identifies the sensor',
+	'',
+	'SerialNumber',
+	0,
+	9,
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	170);
+INSERT INTO O_OIDA
+	VALUES (173,
+	170,
+	0,
+	'SerialNumber');
+INSERT INTO O_ID
+	VALUES (1,
+	170);
+INSERT INTO O_ID
+	VALUES (2,
+	170);
+INSERT INTO PE_PE
+	VALUES (174,
+	1,
+	2,
+	0,
+	9);
+INSERT INTO R_REL
+	VALUES (174,
+	2,
+	'Each TicketRequestButton is built in one entry stand, And this relationship is established during initialization and is never removed.',
+	0);
+INSERT INTO R_SIMP
+	VALUES (174);
+INSERT INTO R_PART
+	VALUES (150,
+	174,
+	175,
+	0,
+	1,
+	'has');
+INSERT INTO R_RTO
+	VALUES (150,
+	174,
+	175,
+	-1);
+INSERT INTO R_OIR
+	VALUES (150,
+	174,
+	175,
+	0);
+INSERT INTO R_PART
+	VALUES (164,
+	174,
+	176,
+	0,
+	0,
+	'Built in');
+INSERT INTO R_RTO
+	VALUES (164,
+	174,
+	176,
+	-1);
+INSERT INTO R_OIR
+	VALUES (164,
+	174,
+	176,
+	0);
+INSERT INTO PE_PE
+	VALUES (177,
+	1,
+	2,
+	0,
+	9);
+INSERT INTO R_REL
+	VALUES (177,
+	3,
+	'The stand has a boom, And this relationship is established when the boom is installed in the corresponding stand and never removed.',
+	0);
+INSERT INTO R_SIMP
+	VALUES (177);
+INSERT INTO R_PART
+	VALUES (164,
+	177,
+	178,
+	0,
+	0,
+	'belong to');
+INSERT INTO R_RTO
+	VALUES (164,
+	177,
+	178,
+	-1);
+INSERT INTO R_OIR
+	VALUES (164,
+	177,
+	178,
+	0);
+INSERT INTO R_PART
+	VALUES (6,
+	177,
+	179,
+	0,
+	0,
+	'has');
+INSERT INTO R_RTO
+	VALUES (6,
+	177,
+	179,
+	-1);
+INSERT INTO R_OIR
+	VALUES (6,
+	177,
+	179,
+	0);
+INSERT INTO PE_PE
+	VALUES (180,
+	1,
+	2,
+	0,
+	9);
+INSERT INTO R_REL
+	VALUES (180,
+	1,
+	'This relationship is established when the sensor is installed in the corresponding stand and never removed.',
+	0);
+INSERT INTO R_SIMP
+	VALUES (180);
+INSERT INTO R_PART
+	VALUES (170,
+	180,
+	181,
+	1,
+	0,
+	'connected with');
+INSERT INTO R_RTO
+	VALUES (170,
+	180,
+	181,
+	-1);
+INSERT INTO R_OIR
+	VALUES (170,
+	180,
+	181,
+	0);
+INSERT INTO R_PART
+	VALUES (164,
+	180,
+	182,
+	0,
+	0,
+	'connected to');
+INSERT INTO R_RTO
+	VALUES (164,
+	180,
+	182,
+	-1);
+INSERT INTO R_OIR
+	VALUES (164,
+	180,
+	182,
+	0);
+INSERT INTO PE_PE
+	VALUES (183,
+	1,
+	2,
+	0,
+	9);
+INSERT INTO R_REL
+	VALUES (183,
+	4,
+	'Established when a Ticket is created and removed when once the driver collectes the ticket.
+',
+	0);
+INSERT INTO R_SIMP
+	VALUES (183);
+INSERT INTO R_PART
+	VALUES (81,
+	183,
+	184,
+	1,
+	1,
+	'issues');
+INSERT INTO R_RTO
+	VALUES (81,
+	183,
+	184,
+	-1);
+INSERT INTO R_OIR
+	VALUES (81,
+	183,
+	184,
+	0);
+INSERT INTO R_PART
+	VALUES (164,
+	183,
+	185,
+	0,
+	0,
+	'issued from');
+INSERT INTO R_RTO
+	VALUES (164,
+	183,
+	185,
+	-1);
+INSERT INTO R_OIR
+	VALUES (164,
+	183,
+	185,
+	0);
+INSERT INTO PE_PE
+	VALUES (186,
+	1,
+	2,
+	0,
+	9);
+INSERT INTO R_REL
+	VALUES (186,
+	5,
+	'This relationship is established once the ticket is issued and removed once the vehicle exited the car park. ',
+	0);
+INSERT INTO R_SIMP
+	VALUES (186);
+INSERT INTO R_PART
+	VALUES (81,
+	186,
+	187,
+	0,
+	1,
+	'reserved by');
+INSERT INTO R_RTO
+	VALUES (81,
+	186,
+	187,
+	-1);
+INSERT INTO R_OIR
+	VALUES (81,
+	186,
+	187,
+	0);
+INSERT INTO R_PART
+	VALUES (147,
+	186,
+	188,
+	0,
+	1,
+	'reserve');
+INSERT INTO R_RTO
+	VALUES (147,
+	186,
+	188,
+	-1);
+INSERT INTO R_OIR
+	VALUES (147,
+	186,
+	188,
+	0);
+INSERT INTO EP_PKG
+	VALUES (189,
+	1,
+	1,
+	'DataTypes',
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES (172,
+	1,
+	189,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (172,
+	0,
+	'SensorType',
+	'',
+	'');
+INSERT INTO S_EDT
+	VALUES (172);
+INSERT INTO S_ENUM
+	VALUES (190,
+	'entered',
+	'',
+	172,
+	0);
+INSERT INTO S_ENUM
+	VALUES (191,
+	'exited',
+	'',
+	172,
+	190);
+INSERT INTO S_ENUM
+	VALUES (192,
+	'waiting',
+	'',
+	172,
+	191);
+INSERT INTO PE_PE
+	VALUES (166,
+	1,
+	189,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (166,
+	0,
+	'StandType',
+	'',
+	'');
+INSERT INTO S_EDT
+	VALUES (166);
+INSERT INTO S_ENUM
+	VALUES (193,
+	'entry',
+	'',
+	166,
+	0);
+INSERT INTO S_ENUM
+	VALUES (194,
+	'exit',
+	'',
+	166,
+	193);
+INSERT INTO PE_PE
+	VALUES (163,
+	1,
+	189,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (163,
+	0,
+	'TicketStatus',
+	'',
+	'');
+INSERT INTO S_EDT
+	VALUES (163);
+INSERT INTO S_ENUM
+	VALUES (195,
+	'issued',
+	'',
+	163,
+	0);
+INSERT INTO S_ENUM
+	VALUES (196,
+	'queued',
+	'',
+	163,
+	195);
+INSERT INTO PE_PE
+	VALUES (168,
+	1,
+	189,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (168,
+	0,
+	'Location',
+	'',
+	'');
+INSERT INTO S_EDT
+	VALUES (168);
+INSERT INTO S_ENUM
+	VALUES (197,
+	'North',
+	'',
+	168,
+	0);
+INSERT INTO S_ENUM
+	VALUES (198,
+	'East',
+	'',
+	168,
+	197);
+INSERT INTO S_ENUM
+	VALUES (199,
+	'South',
+	'',
+	168,
+	198);
+INSERT INTO S_ENUM
+	VALUES (200,
+	'West',
+	'',
+	168,
+	199);
+INSERT INTO S_ENUM
+	VALUES (201,
+	'NorthEast',
+	'',
+	168,
+	200);
+INSERT INTO S_ENUM
+	VALUES (202,
+	'NorthWest',
+	'',
+	168,
+	201);
+INSERT INTO S_ENUM
+	VALUES (203,
+	'SouthEast',
+	'',
+	168,
+	202);
+INSERT INTO S_ENUM
+	VALUES (204,
+	'SouthWest',
+	'',
+	168,
+	203);
+INSERT INTO PE_PE
+	VALUES (12,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (20,
+	VALUES (12,
 	0,
 	'void',
 	'',
 	'');
 INSERT INTO S_CDT
-	VALUES (20,
+	VALUES (12,
 	0);
 INSERT INTO PE_PE
-	VALUES (21,
+	VALUES (5,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (21,
+	VALUES (5,
 	0,
 	'boolean',
 	'',
 	'');
 INSERT INTO S_CDT
-	VALUES (21,
+	VALUES (5,
 	1);
 INSERT INTO PE_PE
-	VALUES (5,
+	VALUES (9,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (5,
+	VALUES (9,
 	0,
 	'integer',
 	'',
 	'');
 INSERT INTO S_CDT
-	VALUES (5,
+	VALUES (9,
 	2);
 INSERT INTO PE_PE
-	VALUES (22,
+	VALUES (156,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (22,
+	VALUES (156,
 	0,
 	'real',
 	'',
 	'');
 INSERT INTO S_CDT
-	VALUES (22,
+	VALUES (156,
 	3);
 INSERT INTO PE_PE
-	VALUES (23,
+	VALUES (205,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (23,
+	VALUES (205,
 	0,
 	'string',
 	'',
 	'');
 INSERT INTO S_CDT
-	VALUES (23,
+	VALUES (205,
 	4);
 INSERT INTO PE_PE
-	VALUES (24,
+	VALUES (27,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (24,
+	VALUES (27,
 	0,
 	'unique_id',
 	'',
 	'');
 INSERT INTO S_CDT
-	VALUES (24,
+	VALUES (27,
 	5);
 INSERT INTO PE_PE
-	VALUES (25,
+	VALUES (16,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (25,
+	VALUES (16,
 	0,
 	'state<State_Model>',
 	'',
 	'');
 INSERT INTO S_CDT
-	VALUES (25,
+	VALUES (16,
 	6);
 INSERT INTO PE_PE
-	VALUES (26,
+	VALUES (206,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (26,
+	VALUES (206,
 	0,
 	'same_as<Base_Attribute>',
 	'',
 	'');
 INSERT INTO S_CDT
-	VALUES (26,
+	VALUES (206,
 	7);
 INSERT INTO PE_PE
-	VALUES (27,
+	VALUES (47,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (27,
+	VALUES (47,
 	0,
 	'inst_ref<Object>',
 	'',
 	'');
 INSERT INTO S_CDT
-	VALUES (27,
+	VALUES (47,
 	8);
 INSERT INTO PE_PE
-	VALUES (28,
+	VALUES (207,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (28,
+	VALUES (207,
 	0,
 	'inst_ref_set<Object>',
 	'',
 	'');
 INSERT INTO S_CDT
-	VALUES (28,
+	VALUES (207,
 	9);
 INSERT INTO PE_PE
-	VALUES (29,
+	VALUES (208,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (29,
+	VALUES (208,
 	0,
 	'inst<Event>',
 	'',
 	'');
 INSERT INTO S_CDT
-	VALUES (29,
+	VALUES (208,
 	10);
 INSERT INTO PE_PE
-	VALUES (30,
+	VALUES (209,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (30,
+	VALUES (209,
 	0,
 	'inst<Mapping>',
 	'',
 	'');
 INSERT INTO S_CDT
-	VALUES (30,
+	VALUES (209,
 	11);
 INSERT INTO PE_PE
-	VALUES (31,
+	VALUES (210,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (31,
+	VALUES (210,
 	0,
 	'inst_ref<Mapping>',
 	'',
 	'');
 INSERT INTO S_CDT
-	VALUES (31,
+	VALUES (210,
 	12);
 INSERT INTO PE_PE
-	VALUES (32,
+	VALUES (211,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (32,
+	VALUES (211,
 	0,
 	'component_ref',
 	'',
 	'');
 INSERT INTO S_CDT
-	VALUES (32,
+	VALUES (211,
 	13);
 INSERT INTO PE_PE
-	VALUES (33,
+	VALUES (212,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (33,
+	VALUES (212,
 	0,
 	'date',
 	'',
 	'');
 INSERT INTO S_UDT
-	VALUES (33,
-	30,
+	VALUES (212,
+	209,
 	1,
 	'');
 INSERT INTO PE_PE
-	VALUES (34,
+	VALUES (213,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (34,
+	VALUES (213,
 	0,
 	'inst_ref<Timer>',
 	'',
 	'');
 INSERT INTO S_UDT
-	VALUES (34,
-	31,
+	VALUES (213,
+	210,
 	3,
 	'');
 INSERT INTO PE_PE
-	VALUES (35,
+	VALUES (214,
 	1,
 	0,
 	0,
 	3);
 INSERT INTO S_DT
-	VALUES (35,
+	VALUES (214,
 	0,
 	'timestamp',
 	'',
 	'');
 INSERT INTO S_UDT
-	VALUES (35,
-	5,
+	VALUES (214,
+	9,
 	2,
 	'');

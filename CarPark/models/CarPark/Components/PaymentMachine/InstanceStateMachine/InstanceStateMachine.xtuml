@@ -14,7 +14,7 @@ INSERT INTO SM_EVTDI
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	'InsertedAmount',
 	'',
-	"ba5eda7a-def5-0000-0000-000000000002",
+	"ba5eda7a-def5-0000-0000-000000000003",
 	'',
 	"d935a083-8245-473b-aeb3-48ec0baf1a28",
 	"00000000-0000-0000-0000-000000000000");
@@ -23,19 +23,73 @@ INSERT INTO SM_EVTDI
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	'InsertedAmount',
 	'',
-	"ba5eda7a-def5-0000-0000-000000000002",
+	"ba5eda7a-def5-0000-0000-000000000003",
 	'',
 	"ea1494d4-6126-4bfa-8e9f-cf9e30b866e1",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_EVTDI
-	VALUES ("e53cabbf-5443-4028-bbcf-971d6adf8768",
+	VALUES ("59678db0-3a5f-4115-b690-6c255f23e12a",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	'Fee',
+	'TicketNumber',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000005",
+	'',
+	"baa51ef5-e612-4170-8ca8-91294f604040",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO SM_EVTDI
+	VALUES ("1307ef3e-a43d-43fe-bd60-c792c270660f",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	'TicketNumber',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000005",
+	'',
+	"94ccc537-cc61-4393-93c5-36f8639d10f7",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO SM_EVTDI
+	VALUES ("5fbcb95c-f2da-462c-9498-e90d1aea8a00",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	'TicketNumber',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000005",
+	'',
+	"d50db7fe-a16b-4165-b400-eb4ed206acf8",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO SM_EVTDI
+	VALUES ("f4044782-6962-437b-8800-2f5b2c068d3d",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	'InsertedAmount',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000003",
+	'',
+	"925497bb-ef7d-4034-8561-783139dcb795",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO SM_EVTDI
+	VALUES ("eb704884-8fd5-497d-afac-0688a5eb7d90",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	'InsertedCurrency',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000003",
+	'',
+	"c664e6c7-072d-4366-9680-a80f8489a001",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO SM_EVTDI
+	VALUES ("e44a40fb-a557-4f4f-9e11-a2baf3f1dd25",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	'InsertedAmount',
 	'',
 	"ba5eda7a-def5-0000-0000-000000000002",
 	'',
-	"ea1494d4-6126-4bfa-8e9f-cf9e30b866e1",
-	"092659f0-a145-4ce9-af83-d18ffe4d52a7");
+	"1b6b5ef5-d13f-401a-8035-f11b81e858f7",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO SM_EVTDI
+	VALUES ("ab7e1800-e744-4d22-985f-d6ff14dafe2c",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	'InsertedAmount',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000003",
+	'',
+	"dc78f742-0603-4f83-8e83-13a01fc5bfed",
+	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_LEVT
 	VALUES ("dc78f742-0603-4f83-8e83-13a01fc5bfed",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
@@ -49,7 +103,7 @@ INSERT INTO SM_EVT
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"00000000-0000-0000-0000-000000000000",
 	10,
-	'Is Available',
+	'IsAvailable',
 	0,
 	'',
 	'PaymentMachine10',
@@ -67,7 +121,7 @@ INSERT INTO SM_EVT
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"00000000-0000-0000-0000-000000000000",
 	11,
-	'Is Unavailable',
+	'IsUnavailable',
 	0,
 	'',
 	'PaymentMachine11',
@@ -85,7 +139,7 @@ INSERT INTO SM_EVT
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"00000000-0000-0000-0000-000000000000",
 	12,
-	'Accept Overpayment',
+	'AcceptOverpayment',
 	0,
 	'',
 	'PaymentMachine12',
@@ -157,7 +211,7 @@ INSERT INTO SM_EVT
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"00000000-0000-0000-0000-000000000000",
 	18,
-	'Insert Currency',
+	'InsertCurrency',
 	0,
 	'',
 	'PaymentMachine18',
@@ -211,7 +265,7 @@ INSERT INTO SM_EVT
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"00000000-0000-0000-0000-000000000000",
 	21,
-	'Timer Expried',
+	'TimerExpried',
 	0,
 	'',
 	'PaymentMachine21',
@@ -229,7 +283,7 @@ INSERT INTO SM_EVT
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"00000000-0000-0000-0000-000000000000",
 	22,
-	'Currency Less than Required ',
+	'CurrencyLessthanRequired',
 	0,
 	'',
 	'PaymentMachine22',
@@ -1236,9 +1290,10 @@ INSERT INTO SM_ACT
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
 	'// open ticket slot to allow user to enter ticket
-
-
-/*OpenTicketSlot()*/',
+if(not self.IsTicketSlotOpen)
+	self.IsTicketSlotOpen=true;
+end if;
+',
 	'',
 	0);
 INSERT INTO SM_MOAH
@@ -1253,8 +1308,15 @@ INSERT INTO SM_ACT
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
 	'//Close currency slot to prevent the user from inserting more money while the transaction is being canceled. 
+if(self.IsCurrencySlotOpen)
+	self.IsCurrencySlotOpen=false;
+end if;
 //return inserted amount to the user
+self.returnedAmount= param.InsertedAmount;
+self.returnCurrancy();
 //return ticket  
+self.IsTicketSlotOpen=true;
+self.returnTicket();
 
 /*CloseCurrencySlot() 
 ReturnMoney(InsertedAmount:real)
@@ -1273,9 +1335,19 @@ INSERT INTO SM_ACT
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
 	'//Cancel the timer
+//isStopped = TIM::timer_cancel (timer_inst_ref:my_timer);
+inserted=param.InsertedCurrency;
 //Reject the inserted currency if it is not money or damaged or not the required currency.
 //return  inserted currency
 //Accept the inserted currency if not damged and the required currancy.
+accerpted=self.CheckCurrancy(InsertedCurrancy:inserted);
+if(not accerpted)
+	self.returnCurrancy(InsertedCurrancy:inserted);
+	generate PaymentMachine19:Rejected(TicketNumber:self.ActivatedTicket) to self;
+else
+	generate PaymentMachine20:Accepted(InsertedAmount:param.InsertedCurrency) to self;
+end if;
+
 
 /*IsAccepted():boolean*/
 ',
@@ -1293,9 +1365,24 @@ INSERT INTO SM_ACT
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
 	'//Close the currency slot to prevent the user form entering more money.
+if(self.IsCurrencySlotOpen)
+	self.IsCurrencySlotOpen=false;
+end if;
 //CalculateCurrency(InsertedAmount:real,Fee:real)
+select any ticket from Ticket where selected.ID == self.ActivatedTicket;
+
 //Calculate if the currency is less or eqaul or more than the reqried fee.
 // if the currency is More then the reqried fee check if the machine has available change to return to the user.
+
+if(param.InsertedAmount<ticket.Fee)
+	generate PaymentMachine22:CurrencyLessthanRequired(TicketNumber:self.ActivatedTicket) to self;	
+elif(param.InsertedAmount-ticket.Fee>0)
+	if(self.AvailableCash>=param.InsertedAmount-ticket.Fee)
+		generate PaymentMachine10:IsAvailable(InsertedAmount:param.InsertedAmount) to self;
+	else
+		generate PaymentMachine11:IsUnavailable(InsertedAmount:param.InsertedAmount) to self;
+	end if;
+end if;
 /*CloseCurrencySlot()*/',
 	'',
 	0);
@@ -1311,7 +1398,13 @@ INSERT INTO SM_ACT
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
 	'//Show message to the user "no avilable change"
-//Prompt the user to accept overpayment or cancel the transaction then wait for user input',
+self.showMessage( msg:"No Available Change");
+//Prompt the user to accept overpayment or cancel the transaction then wait for user input
+if(self.OverPymentIsAccepted)
+	generate PaymentMachine12:AcceptOverpayment() to self;
+else
+	generate PaymentMachine14:Cancel(InsertedAmount:param.InsertedAmount) to self;
+end if;',
 	'',
 	0);
 INSERT INTO SM_MOAH
@@ -1326,7 +1419,9 @@ INSERT INTO SM_ACT
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
 	'// Calculate ExitDeadline => Current time + 15 min
+select any ticket from Ticket where selected.ID == self.ActivatedTicket;
 //Print ExitDeadline on the ticket 
+ticket.printDeadline( msg:ticket.ExitDeadline);
 
 /*CalculateExitDeadLine()
 PrintOnTicket(ExitDeadLine:integer)*/',
@@ -1343,14 +1438,25 @@ INSERT INTO SM_ACT
 	VALUES ("ee088f5b-4609-46d3-87c5-107395c797b6",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
-	'//Display the required fee to the user
-//open currency slot to allow the user to enter currency
-// start timer of 30 secends to wait for payment
+	'//select any ticket related by self->Ticket[R6] where selected.ID==
+self.ActivatedTicket=param.TicketNumber;
+//Display the required fee to the user
+select any ticket from Ticket where selected.ID == param.TicketNumber;
 
-/*CloseTicketSlot()
+//open currency slot to allow the user to enter currency
+if(not self.IsCurrencySlotOpen)
+	self.IsCurrencySlotOpen=true;
+end if;
+// start timer of 30 secends to wait for payment
+st = 3000;
+create event instance move_on of PaymentMachine21:TimerExpried(InsertedAmount:0) to self;
+my_timer= TIM::timer_start(microseconds:st, event_inst:move_on);
+
+/*
 DisplayFee(Fee:real)
 OpenCurrencySlot()
-StartTimer(Sec:integer)*/',
+StartTimer(Sec:integer)*/
+',
 	'',
 	0);
 INSERT INTO SM_TAH
@@ -1365,6 +1471,7 @@ INSERT INTO SM_ACT
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
 	'//Close ticket slot to prevent the user from inserting more than one ticket until the transaction is completed. 
+self.IsTicketSlotOpen=false;
 ',
 	'',
 	0);
@@ -1378,7 +1485,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("27f1c6fd-70c3-41ff-a0e9-6d1372752fe2",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	3,
+	1,
 	'',
 	'',
 	0);
@@ -1392,7 +1499,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("6da8f0bd-fac5-477c-b2bc-201d32fa4bb6",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	3,
+	1,
 	'',
 	'',
 	0);
@@ -1420,7 +1527,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("1f98f352-efa7-4efa-9c0f-b1c875a31d47",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	3,
+	1,
 	'',
 	'',
 	0);
@@ -1434,7 +1541,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("31fd1d59-402b-4bec-8f1c-12c4b9e50fee",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	3,
+	1,
 	'',
 	'',
 	0);
@@ -1448,7 +1555,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("b4da8b91-379e-4bd0-9ecb-4bfc7e2322db",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	3,
+	1,
 	'',
 	'',
 	0);
@@ -1463,9 +1570,10 @@ INSERT INTO SM_ACT
 	VALUES ("f9dee36b-930c-470c-bf9f-0346dd9af116",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
-	'// Calculate ExitDeadline => Current time + 15 min
-//Print ExitDeadline on the ticket 
-//return ticket  
+	'//return ticket  
+self.IsTicketSlotOpen=true;
+self.returnTicket( TicketID:self.ActivatedTicket);
+
 /*CalculateExitDeadLine()
 PrintOnTicket(ExitDeadLine:integer)*/
 ',
@@ -1509,7 +1617,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("024f2ed3-a8ce-42d3-8714-7bbd56b7444e",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	3,
+	1,
 	'',
 	'',
 	0);
@@ -1523,7 +1631,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("2d49f719-8f01-4ce1-8f79-1ca494275b12",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	3,
+	1,
 	'',
 	'',
 	0);
@@ -1537,7 +1645,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("40676e51-70ce-45f2-b662-33195ca48559",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	3,
+	1,
 	'',
 	'',
 	0);
@@ -1552,7 +1660,13 @@ INSERT INTO SM_ACT
 	VALUES ("12de26b9-93e4-4f8a-ba39-7f0e37920d07",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
-	'DliverChange()',
+	'//DliverChange()
+select any ticket from Ticket where selected.ID == self.ActivatedTicket;
+change=ticket.Fee-param.InsertedAmount;
+self.IsCurrencySlotOpen=true;
+self.returnedAmount=change;
+self.AvailableCash=self.AvailableCash-change;
+',
 	'',
 	0);
 INSERT INTO GD_MD
@@ -1942,8 +2056,8 @@ INSERT INTO DIM_ND
 	0.000000,
 	"330dd3a1-74c7-4330-9595-b4ab0ef8ce41");
 INSERT INTO DIM_GE
-	VALUES (5045.000000,
-	3067.000000,
+	VALUES (4985.000000,
+	3071.000000,
 	"330dd3a1-74c7-4330-9595-b4ab0ef8ce41",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO DIM_ELE
@@ -2008,7 +2122,7 @@ INSERT INTO GD_GE
 	"a48d4f97-46fa-4748-907a-1b2d12f86caf",
 	42,
 	0,
-	'CarPark::Components::PaymentMachine::Instance State Machine::Waiting for Payment::PaymentMachine21: Timer Expried');
+	'CarPark::Components::PaymentMachine::Instance State Machine::Waiting for Payment::PaymentMachine21: TimerExpried');
 INSERT INTO GD_CON
 	VALUES ("3abd018b-7e35-4ee8-8e4f-56e128d389b4",
 	"00000000-0000-0000-0000-000000000000");
@@ -2038,12 +2152,12 @@ INSERT INTO GD_CTXT
 	0.000000,
 	0.000000);
 INSERT INTO DIM_ND
-	VALUES (0.000000,
-	0.000000,
+	VALUES (173.000000,
+	36.000000,
 	"ad06bc7b-7265-4055-b007-c26c672bbe44");
 INSERT INTO DIM_GE
-	VALUES (5544.000000,
-	3020.000000,
+	VALUES (5522.000000,
+	3008.000000,
 	"ad06bc7b-7265-4055-b007-c26c672bbe44",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO DIM_ELE
@@ -2108,7 +2222,7 @@ INSERT INTO GD_GE
 	"06205e59-c6fd-4e13-b22f-81090b4bc3d7",
 	42,
 	0,
-	'CarPark::Components::PaymentMachine::Instance State Machine::Waiting for Payment::PaymentMachine18: Insert Currency');
+	'CarPark::Components::PaymentMachine::Instance State Machine::Waiting for Payment::PaymentMachine18: InsertCurrency');
 INSERT INTO GD_CON
 	VALUES ("17efa4a9-1822-484f-a7ea-834ec38d9429",
 	"00000000-0000-0000-0000-000000000000");
@@ -2473,7 +2587,7 @@ INSERT INTO GD_GE
 	"51474f00-d65a-4896-8b4d-b456b1984fe8",
 	42,
 	0,
-	'CarPark::Components::PaymentMachine::Instance State Machine::Currency Inserted::PaymentMachine22: Currency Less than Required ');
+	'CarPark::Components::PaymentMachine::Instance State Machine::Currency Inserted::PaymentMachine22: CurrencyLessthanRequired');
 INSERT INTO GD_CON
 	VALUES ("7df87e7c-b30e-4940-ba4d-6c4da3b58135",
 	"00000000-0000-0000-0000-000000000000");
@@ -2503,12 +2617,12 @@ INSERT INTO GD_CTXT
 	0.000000,
 	0.000000);
 INSERT INTO DIM_ND
-	VALUES (196.000000,
-	36.000000,
+	VALUES (152.000000,
+	49.000000,
 	"5f6ddba0-d445-469a-bd3b-eeae26bff91f");
 INSERT INTO DIM_GE
-	VALUES (5218.000000,
-	3189.000000,
+	VALUES (5254.000000,
+	3197.000000,
 	"5f6ddba0-d445-469a-bd3b-eeae26bff91f",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO DIM_ELE
@@ -2573,7 +2687,7 @@ INSERT INTO GD_GE
 	"f7a346fd-1b9a-435c-9e69-09f148714370",
 	42,
 	0,
-	'CarPark::Components::PaymentMachine::Instance State Machine::OverPayment::PaymentMachine12: Accept Overpayment');
+	'CarPark::Components::PaymentMachine::Instance State Machine::OverPayment::PaymentMachine12: AcceptOverpayment');
 INSERT INTO GD_CON
 	VALUES ("d26bf214-f7f0-42f3-bd4c-3ef65d322ebb",
 	"00000000-0000-0000-0000-000000000000");
@@ -3316,7 +3430,7 @@ INSERT INTO GD_GE
 	"a515467e-e0d5-4700-af5a-24b6e487d760",
 	42,
 	0,
-	'CarPark::Components::PaymentMachine::Instance State Machine::Currency Inserted::PaymentMachine11: Is Unavailable');
+	'CarPark::Components::PaymentMachine::Instance State Machine::Currency Inserted::PaymentMachine11: IsUnavailable');
 INSERT INTO GD_CON
 	VALUES ("af344468-b543-4632-81de-325a15089ce2",
 	"00000000-0000-0000-0000-000000000000");
@@ -3350,7 +3464,7 @@ INSERT INTO DIM_ND
 	0.000000,
 	"258aa828-1d63-4145-b454-8dc5c1ba555a");
 INSERT INTO DIM_GE
-	VALUES (5176.000000,
+	VALUES (5096.000000,
 	3445.000000,
 	"258aa828-1d63-4145-b454-8dc5c1ba555a",
 	"00000000-0000-0000-0000-000000000000");
@@ -3442,7 +3556,7 @@ INSERT INTO GD_GE
 	"d532a141-6b70-44c4-af56-8b3cf0a2d682",
 	42,
 	0,
-	'CarPark::Components::PaymentMachine::Instance State Machine::Currency Inserted::PaymentMachine10: Is Available');
+	'CarPark::Components::PaymentMachine::Instance State Machine::Currency Inserted::PaymentMachine10: IsAvailable');
 INSERT INTO GD_CON
 	VALUES ("d840463e-d41b-4175-b627-bbf017db3295",
 	"00000000-0000-0000-0000-000000000000");

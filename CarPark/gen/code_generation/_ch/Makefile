@@ -19,8 +19,8 @@ help :
     @echo "   clean               |   "
     @echo "============================================================="
 
-include /Users/shahadhamad/BridgePointProject/CarPark/gen/code_generation/Makefile.in
-include /Users/shahadhamad/BridgePointProject/CarPark/gen/code_generation/Makefile.user
+include /Users/shahadhamad/git/CarPark1/CarPark/gen/code_generation/Makefile.in
+include /Users/shahadhamad/git/CarPark1/CarPark/gen/code_generation/Makefile.user
 
 # use Target C Cross Compiler
 CMD_TARGET_COMPILE    = ${CMD_COMPILE}
