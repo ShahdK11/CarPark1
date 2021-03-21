@@ -14,8 +14,9 @@ INSERT INTO O_TFR
 	'',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
-	'',
-	3,
+	'// external component to print the exit deadline on the ticket
+',
+	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
 	0);
@@ -28,6 +29,52 @@ INSERT INTO O_TPARM
 	'',
 	"00000000-0000-0000-0000-000000000000",
 	'');
+INSERT INTO O_TFR
+	VALUES ("69d3661b-b215-431a-b432-80a74f989866",
+	"abf44062-5612-49b4-a45b-627ecdbff52f",
+	'Create',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'create object instance ticket of Ticket;
+ticket.EntryDateTime = TIM::current_date();
+ticket.ID = param.ticketID; // how to generate UniqueID
+ticket.IsPaid = false;
+ticket.Status = TicketStatus[''queued'']; // how to use user defined DataTypes to assing value to a variable 
+
+ 
+// relate this ticket to the stand where it was issued from
+select any slot from Slot where selected.IsOccupied == false;
+if (not_empty slot)
+	relate ticket to slot across R5;
+	slot.UpdateIsOccupied( ID:slot.ID );
+	ticket.Status = TicketStatus[''issued'']; // how to use user defined DataTypes to assing value to a variable 
+end if;s',
+	1,
+	'',
+	"a47a5cd9-8de7-4370-94ca-ff1e109e9141",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("936c3653-6c2d-4533-893f-e374052c735c",
+	"69d3661b-b215-431a-b432-80a74f989866",
+	'ticketID',
+	"ba5eda7a-def5-0000-0000-000000000005",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("74e2ec82-26ff-47ce-9190-3a72ceaccd89",
+	"abf44062-5612-49b4-a45b-627ecdbff52f",
+	'Delete',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	3,
+	'',
+	"69d3661b-b215-431a-b432-80a74f989866",
+	0);
 INSERT INTO O_NBATTR
 	VALUES ("e4e0a0d6-66a7-4d73-9536-a668da1eacb4",
 	"abf44062-5612-49b4-a45b-627ecdbff52f");
@@ -64,13 +111,13 @@ origin: start of epoch
 	'',
 	'EntryDateTime',
 	0,
-	"ba5eda7a-def5-0000-0000-000000000002",
+	"ba5eda7a-def5-0000-0000-00000000000e",
 	'',
 	'');
 INSERT INTO O_DBATTR
 	VALUES ("051c3208-0c05-47a9-8f3a-42902f95f035",
 	"abf44062-5612-49b4-a45b-627ecdbff52f",
-	'',
+	'self.Fee = (Self.ExitDeadline - Self.EntryDateTime )  *  2; // assumpting that the fee cost will be 0.2 foe earch minutes.  we need to convert the result first to minutes. ',
 	1,
 	0);
 INSERT INTO O_BATTR
@@ -131,7 +178,7 @@ origin: start of epoch
 	'',
 	'ExitDeadline',
 	0,
-	"ba5eda7a-def5-0000-0000-000000000002",
+	"ba5eda7a-def5-0000-0000-00000000000e",
 	'',
 	'');
 INSERT INTO O_NBATTR
@@ -153,7 +200,7 @@ origin: start of epoch
 	'',
 	'ExitDateTime',
 	0,
-	"ba5eda7a-def5-0000-0000-000000000002",
+	"ba5eda7a-def5-0000-0000-00000000000e",
 	'',
 	'');
 INSERT INTO O_NBATTR
