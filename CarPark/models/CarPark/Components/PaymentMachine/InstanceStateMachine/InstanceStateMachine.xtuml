@@ -95,7 +95,7 @@ INSERT INTO SM_EVTDI
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	'my_timer',
 	'',
-	"ba5eda7a-def5-0000-0000-000000000002",
+	"ba5eda7a-def5-0000-0000-00000000000f",
 	'',
 	"c664e6c7-072d-4366-9680-a80f8489a001",
 	"eb704884-8fd5-497d-afac-0688a5eb7d90");
@@ -1316,7 +1316,7 @@ INSERT INTO SM_ACT
 	VALUES ("00398928-dfb9-427c-896d-89fa87f8c666",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
-	'//Close currency slot to prevent the user from inserting more money while the transaction is being canceled. 
+	' //Close currency slot to prevent the user from inserting more money while the transaction is being canceled. 
 if(self.IsCurrencySlotOpen)
 	self.IsCurrencySlotOpen=false;
 end if;
@@ -1344,7 +1344,7 @@ INSERT INTO SM_ACT
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
 	'//Cancel the timer
-//isStopped = TIM::timer_cancel (timer_inst_ref:my_timer);
+isStopped = TIM::timer_cancel (timer_inst_ref:param.my_timer);
 inserted=param.InsertedCurrency;
 //Reject the inserted currency if it is not money or damaged or not the required currency.
 //return  inserted currency
@@ -1447,7 +1447,7 @@ INSERT INTO SM_ACT
 	VALUES ("ee088f5b-4609-46d3-87c5-107395c797b6",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
-	'//select any ticket related by self->Ticket[R6] where selected.ID==
+	' //select any ticket related by self->Ticket[R6] where selected.ID==
 self.ActivatedTicket=param.TicketNumber;
 //Display the required fee to the user
 select any ticket from Ticket where selected.ID == param.TicketNumber;
