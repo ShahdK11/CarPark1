@@ -8,6 +8,36 @@ INSERT INTO O_OBJ
 	'An area that the car occupies in the carpark. 
 ',
 	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("375467d6-8305-40e4-90fb-0bef9aefa335",
+	"a0aab861-a662-4031-aded-38350d076a9e",
+	'UpdateIsOccupied',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'select any slot from Slot where selected.ID == param.ID;
+
+if (not_empty slot)
+	if (slot.IsOccupied )
+		slot.IsOccupied = false;
+	else
+			slot.IsOccupied = true;
+	end if;
+			
+end if;',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("96e2ce5a-6d43-4e28-8af4-738de069e474",
+	"375467d6-8305-40e4-90fb-0bef9aefa335",
+	'ID',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
 INSERT INTO O_NBATTR
 	VALUES ("80b458fa-4bf5-4a23-ba57-8aa3bf7e91d0",
 	"a0aab861-a662-4031-aded-38350d076a9e");
