@@ -37,24 +37,6 @@ INSERT INTO SM_EVTDI
 	"baa51ef5-e612-4170-8ca8-91294f604040",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_EVTDI
-	VALUES ("1307ef3e-a43d-43fe-bd60-c792c270660f",
-	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	'TicketNumber',
-	'',
-	"ba5eda7a-def5-0000-0000-000000000005",
-	'',
-	"94ccc537-cc61-4393-93c5-36f8639d10f7",
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO SM_EVTDI
-	VALUES ("5fbcb95c-f2da-462c-9498-e90d1aea8a00",
-	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	'TicketNumber',
-	'',
-	"ba5eda7a-def5-0000-0000-000000000005",
-	'',
-	"d50db7fe-a16b-4165-b400-eb4ed206acf8",
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO SM_EVTDI
 	VALUES ("f4044782-6962-437b-8800-2f5b2c068d3d",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	'InsertedAmount',
@@ -82,15 +64,6 @@ INSERT INTO SM_EVTDI
 	"1b6b5ef5-d13f-401a-8035-f11b81e858f7",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_EVTDI
-	VALUES ("ab7e1800-e744-4d22-985f-d6ff14dafe2c",
-	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	'InsertedAmount',
-	'',
-	"ba5eda7a-def5-0000-0000-000000000003",
-	'',
-	"dc78f742-0603-4f83-8e83-13a01fc5bfed",
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO SM_EVTDI
 	VALUES ("97aec83a-003d-4e01-a9a1-794285e3f2bf",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	'my_timer',
@@ -99,24 +72,15 @@ INSERT INTO SM_EVTDI
 	'',
 	"c664e6c7-072d-4366-9680-a80f8489a001",
 	"eb704884-8fd5-497d-afac-0688a5eb7d90");
-INSERT INTO SM_LEVT
-	VALUES ("dc78f742-0603-4f83-8e83-13a01fc5bfed",
+INSERT INTO SM_EVTDI
+	VALUES ("f8d790c2-3495-4539-aabd-c5581db27425",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO SM_SEVT
-	VALUES ("dc78f742-0603-4f83-8e83-13a01fc5bfed",
-	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO SM_EVT
-	VALUES ("dc78f742-0603-4f83-8e83-13a01fc5bfed",
-	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	"00000000-0000-0000-0000-000000000000",
-	10,
-	'IsAvailable',
-	0,
+	'InsertedAmount',
 	'',
-	'PaymentMachine10',
-	'');
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	"56bd4158-3129-46c9-be00-f7f553bdc1df",
+	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_LEVT
 	VALUES ("1b6b5ef5-d13f-401a-8035-f11b81e858f7",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
@@ -297,6 +261,24 @@ INSERT INTO SM_EVT
 	'',
 	'PaymentMachine22',
 	'');
+INSERT INTO SM_LEVT
+	VALUES ("56bd4158-3129-46c9-be00-f7f553bdc1df",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO SM_SEVT
+	VALUES ("56bd4158-3129-46c9-be00-f7f553bdc1df",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO SM_EVT
+	VALUES ("56bd4158-3129-46c9-be00-f7f553bdc1df",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	"00000000-0000-0000-0000-000000000000",
+	23,
+	'IsAvailable',
+	0,
+	'',
+	'PaymentMachine23',
+	'');
 INSERT INTO SM_STATE
 	VALUES ("188a96e4-0d11-4735-a236-f002abb7736b",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
@@ -304,17 +286,6 @@ INSERT INTO SM_STATE
 	'Waiting for Ticket',
 	1,
 	0);
-INSERT INTO SM_CH
-	VALUES ("188a96e4-0d11-4735-a236-f002abb7736b",
-	"dc78f742-0603-4f83-8e83-13a01fc5bfed",
-	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	"00000000-0000-0000-0000-000000000000",
-	'');
-INSERT INTO SM_SEME
-	VALUES ("188a96e4-0d11-4735-a236-f002abb7736b",
-	"dc78f742-0603-4f83-8e83-13a01fc5bfed",
-	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_CH
 	VALUES ("188a96e4-0d11-4735-a236-f002abb7736b",
 	"1b6b5ef5-d13f-401a-8035-f11b81e858f7",
@@ -417,6 +388,17 @@ INSERT INTO SM_CH
 INSERT INTO SM_SEME
 	VALUES ("188a96e4-0d11-4735-a236-f002abb7736b",
 	"d50db7fe-a16b-4165-b400-eb4ed206acf8",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO SM_CH
+	VALUES ("188a96e4-0d11-4735-a236-f002abb7736b",
+	"56bd4158-3129-46c9-be00-f7f553bdc1df",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO SM_SEME
+	VALUES ("188a96e4-0d11-4735-a236-f002abb7736b",
+	"56bd4158-3129-46c9-be00-f7f553bdc1df",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_STATE
@@ -428,17 +410,6 @@ INSERT INTO SM_STATE
 	0);
 INSERT INTO SM_CH
 	VALUES ("ad8228c7-552d-40aa-b70a-967fa2beec26",
-	"dc78f742-0603-4f83-8e83-13a01fc5bfed",
-	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	"00000000-0000-0000-0000-000000000000",
-	'');
-INSERT INTO SM_SEME
-	VALUES ("ad8228c7-552d-40aa-b70a-967fa2beec26",
-	"dc78f742-0603-4f83-8e83-13a01fc5bfed",
-	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO SM_CH
-	VALUES ("ad8228c7-552d-40aa-b70a-967fa2beec26",
 	"1b6b5ef5-d13f-401a-8035-f11b81e858f7",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"00000000-0000-0000-0000-000000000000",
@@ -539,6 +510,17 @@ INSERT INTO SM_CH
 INSERT INTO SM_SEME
 	VALUES ("ad8228c7-552d-40aa-b70a-967fa2beec26",
 	"d50db7fe-a16b-4165-b400-eb4ed206acf8",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO SM_CH
+	VALUES ("ad8228c7-552d-40aa-b70a-967fa2beec26",
+	"56bd4158-3129-46c9-be00-f7f553bdc1df",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO SM_SEME
+	VALUES ("ad8228c7-552d-40aa-b70a-967fa2beec26",
+	"56bd4158-3129-46c9-be00-f7f553bdc1df",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_STATE
@@ -627,17 +609,6 @@ INSERT INTO SM_SEME
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_CH
 	VALUES ("0f84b39e-cf41-46d9-94f6-8ca2e3db4d9b",
-	"dc78f742-0603-4f83-8e83-13a01fc5bfed",
-	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	"00000000-0000-0000-0000-000000000000",
-	'');
-INSERT INTO SM_SEME
-	VALUES ("0f84b39e-cf41-46d9-94f6-8ca2e3db4d9b",
-	"dc78f742-0603-4f83-8e83-13a01fc5bfed",
-	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO SM_CH
-	VALUES ("0f84b39e-cf41-46d9-94f6-8ca2e3db4d9b",
 	"1b6b5ef5-d13f-401a-8035-f11b81e858f7",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"00000000-0000-0000-0000-000000000000",
@@ -667,6 +638,17 @@ INSERT INTO SM_CH
 INSERT INTO SM_SEME
 	VALUES ("0f84b39e-cf41-46d9-94f6-8ca2e3db4d9b",
 	"d935a083-8245-473b-aeb3-48ec0baf1a28",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO SM_CH
+	VALUES ("0f84b39e-cf41-46d9-94f6-8ca2e3db4d9b",
+	"56bd4158-3129-46c9-be00-f7f553bdc1df",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO SM_SEME
+	VALUES ("0f84b39e-cf41-46d9-94f6-8ca2e3db4d9b",
+	"56bd4158-3129-46c9-be00-f7f553bdc1df",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_STATE
@@ -749,11 +731,6 @@ INSERT INTO SM_SEME
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_SEME
 	VALUES ("8d799fbc-f992-498f-8e44-6bab0efef149",
-	"dc78f742-0603-4f83-8e83-13a01fc5bfed",
-	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO SM_SEME
-	VALUES ("8d799fbc-f992-498f-8e44-6bab0efef149",
 	"1b6b5ef5-d13f-401a-8035-f11b81e858f7",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"00000000-0000-0000-0000-000000000000");
@@ -771,6 +748,11 @@ INSERT INTO SM_SEME
 INSERT INTO SM_SEME
 	VALUES ("8d799fbc-f992-498f-8e44-6bab0efef149",
 	"d935a083-8245-473b-aeb3-48ec0baf1a28",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO SM_SEME
+	VALUES ("8d799fbc-f992-498f-8e44-6bab0efef149",
+	"56bd4158-3129-46c9-be00-f7f553bdc1df",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_STATE
@@ -859,17 +841,6 @@ INSERT INTO SM_SEME
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_CH
 	VALUES ("8b271aeb-2436-4e47-9c01-fa02de47746c",
-	"dc78f742-0603-4f83-8e83-13a01fc5bfed",
-	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	"00000000-0000-0000-0000-000000000000",
-	'');
-INSERT INTO SM_SEME
-	VALUES ("8b271aeb-2436-4e47-9c01-fa02de47746c",
-	"dc78f742-0603-4f83-8e83-13a01fc5bfed",
-	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO SM_CH
-	VALUES ("8b271aeb-2436-4e47-9c01-fa02de47746c",
 	"1b6b5ef5-d13f-401a-8035-f11b81e858f7",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"00000000-0000-0000-0000-000000000000",
@@ -887,6 +858,17 @@ INSERT INTO SM_SEME
 INSERT INTO SM_SEME
 	VALUES ("8b271aeb-2436-4e47-9c01-fa02de47746c",
 	"d935a083-8245-473b-aeb3-48ec0baf1a28",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO SM_CH
+	VALUES ("8b271aeb-2436-4e47-9c01-fa02de47746c",
+	"56bd4158-3129-46c9-be00-f7f553bdc1df",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO SM_SEME
+	VALUES ("8b271aeb-2436-4e47-9c01-fa02de47746c",
+	"56bd4158-3129-46c9-be00-f7f553bdc1df",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_STATE
@@ -969,17 +951,6 @@ INSERT INTO SM_SEME
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_CH
 	VALUES ("c264a6ab-097a-427a-b09d-7722288e7eac",
-	"dc78f742-0603-4f83-8e83-13a01fc5bfed",
-	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	"00000000-0000-0000-0000-000000000000",
-	'');
-INSERT INTO SM_SEME
-	VALUES ("c264a6ab-097a-427a-b09d-7722288e7eac",
-	"dc78f742-0603-4f83-8e83-13a01fc5bfed",
-	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO SM_CH
-	VALUES ("c264a6ab-097a-427a-b09d-7722288e7eac",
 	"1b6b5ef5-d13f-401a-8035-f11b81e858f7",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"00000000-0000-0000-0000-000000000000",
@@ -1009,6 +980,17 @@ INSERT INTO SM_CH
 INSERT INTO SM_SEME
 	VALUES ("c264a6ab-097a-427a-b09d-7722288e7eac",
 	"d935a083-8245-473b-aeb3-48ec0baf1a28",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO SM_CH
+	VALUES ("c264a6ab-097a-427a-b09d-7722288e7eac",
+	"56bd4158-3129-46c9-be00-f7f553bdc1df",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO SM_SEME
+	VALUES ("c264a6ab-097a-427a-b09d-7722288e7eac",
+	"56bd4158-3129-46c9-be00-f7f553bdc1df",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_STATE
@@ -1097,17 +1079,6 @@ INSERT INTO SM_SEME
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_CH
 	VALUES ("8021b38d-93d3-4677-9e6a-88cf08b1e77e",
-	"dc78f742-0603-4f83-8e83-13a01fc5bfed",
-	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	"00000000-0000-0000-0000-000000000000",
-	'');
-INSERT INTO SM_SEME
-	VALUES ("8021b38d-93d3-4677-9e6a-88cf08b1e77e",
-	"dc78f742-0603-4f83-8e83-13a01fc5bfed",
-	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO SM_CH
-	VALUES ("8021b38d-93d3-4677-9e6a-88cf08b1e77e",
 	"1b6b5ef5-d13f-401a-8035-f11b81e858f7",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"00000000-0000-0000-0000-000000000000",
@@ -1131,6 +1102,17 @@ INSERT INTO SM_SEME
 INSERT INTO SM_SEME
 	VALUES ("8021b38d-93d3-4677-9e6a-88cf08b1e77e",
 	"d935a083-8245-473b-aeb3-48ec0baf1a28",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO SM_CH
+	VALUES ("8021b38d-93d3-4677-9e6a-88cf08b1e77e",
+	"56bd4158-3129-46c9-be00-f7f553bdc1df",
+	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO SM_SEME
+	VALUES ("8021b38d-93d3-4677-9e6a-88cf08b1e77e",
+	"56bd4158-3129-46c9-be00-f7f553bdc1df",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_NSTXN
@@ -1280,7 +1262,7 @@ INSERT INTO SM_NSTXN
 	VALUES ("d532a141-6b70-44c4-af56-8b3cf0a2d682",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"8d799fbc-f992-498f-8e44-6bab0efef149",
-	"dc78f742-0603-4f83-8e83-13a01fc5bfed",
+	"56bd4158-3129-46c9-be00-f7f553bdc1df",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_TXN
 	VALUES ("d532a141-6b70-44c4-af56-8b3cf0a2d682",
@@ -1349,10 +1331,12 @@ inserted=param.InsertedCurrency;
 //Reject the inserted currency if it is not money or damaged or not the required currency.
 //return  inserted currency
 //Accept the inserted currency if not damged and the required currancy.
+select one T1 related by self->Ticket[R6];
+
 accerpted=self.CheckCurrancy(InsertedCurrancy:inserted);
 if(not accerpted)
 	self.returnCurrancy(InsertedCurrancy:inserted);
-	generate PaymentMachine19:Rejected(TicketNumber:self.ActivatedTicket) to self;
+	generate PaymentMachine19:Rejected() to self;
 else
 	generate PaymentMachine20:Accepted(InsertedAmount:param.InsertedCurrency) to self;
 end if;
@@ -1378,16 +1362,15 @@ if(self.IsCurrencySlotOpen)
 	self.IsCurrencySlotOpen=false;
 end if;
 //CalculateCurrency(InsertedAmount:real,Fee:real)
-select any ticket from Ticket where selected.ID == self.ActivatedTicket;
 
 //Calculate if the currency is less or eqaul or more than the reqried fee.
 // if the currency is More then the reqried fee check if the machine has available change to return to the user.
-
-if(param.InsertedAmount<ticket.Fee)
-	generate PaymentMachine22:CurrencyLessthanRequired(TicketNumber:self.ActivatedTicket) to self;	
-elif(param.InsertedAmount-ticket.Fee>0)
-	if(self.AvailableCash>=param.InsertedAmount-ticket.Fee)
-		generate PaymentMachine10:IsAvailable(InsertedAmount:param.InsertedAmount) to self;
+select one T1 related by self->Ticket[R6];
+if(param.InsertedAmount<T1.Fee)
+	generate PaymentMachine22:CurrencyLessthanRequired() to self;	
+elif(param.InsertedAmount-T1.Fee>0)
+	if(self.AvailableCash>=param.InsertedAmount-T1.Fee)
+		generate PaymentMachine23:IsAvailable(InsertedAmount:param.InsertedAmount) to self;
 	else
 		generate PaymentMachine11:IsUnavailable(InsertedAmount:param.InsertedAmount) to self;
 	end if;
@@ -1428,9 +1411,10 @@ INSERT INTO SM_ACT
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
 	'// Calculate ExitDeadline => Current time + 15 min
-select any ticket from Ticket where selected.ID == self.ActivatedTicket;
 //Print ExitDeadline on the ticket 
-ticket.printDeadline( msg:ticket.ExitDeadline);
+select one T1 related by self->Ticket[R6];
+//msg="Exit Deadline: "+T1.ExitDeadline;
+//T1.printDeadline( msg:msg);
 
 /*CalculateExitDeadLine()
 PrintOnTicket(ExitDeadLine:integer)*/',
@@ -1447,11 +1431,10 @@ INSERT INTO SM_ACT
 	VALUES ("ee088f5b-4609-46d3-87c5-107395c797b6",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
-	' //select any ticket related by self->Ticket[R6] where selected.ID==
-self.ActivatedTicket=param.TicketNumber;
+	'select one T1 related by self->Ticket[R6];
 //Display the required fee to the user
-select any ticket from Ticket where selected.ID == param.TicketNumber;
-
+//msg= "The Required Fee: " +T1.Fee;
+//self.showMessage( msg:msg );
 //open currency slot to allow the user to enter currency
 if(not self.IsCurrencySlotOpen)
 	self.IsCurrencySlotOpen=true;
@@ -1580,8 +1563,10 @@ INSERT INTO SM_ACT
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
 	'//return ticket  
+select one T1 related by self->Ticket[R6];
+
 self.IsTicketSlotOpen=true;
-self.returnTicket( TicketID:self.ActivatedTicket);
+self.returnTicket( TicketID:T1.ID);
 
 /*CalculateExitDeadLine()
 PrintOnTicket(ExitDeadLine:integer)*/
@@ -1669,9 +1654,9 @@ INSERT INTO SM_ACT
 	VALUES ("12de26b9-93e4-4f8a-ba39-7f0e37920d07",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
-	'//DliverChange()
-select any ticket from Ticket where selected.ID == self.ActivatedTicket;
-change=ticket.Fee-param.InsertedAmount;
+	'select one T1 related by self->Ticket[R6];
+
+change=T1.Fee-param.InsertedAmount;
 self.IsCurrencySlotOpen=true;
 self.returnedAmount=change;
 self.AvailableCash=self.AvailableCash-change;
@@ -3565,7 +3550,7 @@ INSERT INTO GD_GE
 	"d532a141-6b70-44c4-af56-8b3cf0a2d682",
 	42,
 	0,
-	'CarPark::Components::PaymentMachine::Instance State Machine::Currency Inserted::PaymentMachine10: IsAvailable');
+	'CarPark::Components::PaymentMachine::Instance State Machine::Currency Inserted::PaymentMachine23: IsAvailable');
 INSERT INTO GD_CON
 	VALUES ("d840463e-d41b-4175-b627-bbf017db3295",
 	"00000000-0000-0000-0000-000000000000");

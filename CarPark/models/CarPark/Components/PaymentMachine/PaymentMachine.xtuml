@@ -28,7 +28,7 @@ INSERT INTO O_TFR
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
-	3,
+	1,
 	'',
 	"2f117e47-9662-4b70-badd-54944903f663",
 	0);
@@ -49,7 +49,7 @@ INSERT INTO O_TFR
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
-	3,
+	1,
 	'',
 	"650313ca-a3ef-4055-a524-88ac8965d519",
 	0);
@@ -69,8 +69,12 @@ INSERT INTO O_TFR
 	'',
 	"ba5eda7a-def5-0000-0000-000000000001",
 	1,
-	'',
-	3,
+	'if(param.InsertedCurrancy>0)
+	return true;
+else
+	return false;
+end if;',
+	1,
 	'',
 	"822dd859-adfa-4598-85af-5bea99db03ff",
 	0);
@@ -91,7 +95,7 @@ INSERT INTO O_TFR
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
-	3,
+	1,
 	'',
 	"88e952c3-27c3-4cab-bffb-fb9bd1779e77",
 	0);
@@ -133,7 +137,9 @@ INSERT INTO O_ATTR
 	"0115173d-5d99-47c7-8f26-a50a77b9753b",
 	"5e8e9786-b445-418e-ab22-dbcb113576d0",
 	'IsTicketSlotOpen',
-	'',
+	'Indicates the status of the ticket slot in the payment mchaine.
+True when the slot is open; false otherwise.
+',
 	'',
 	'IsTicketSlotOpen',
 	0,
@@ -151,7 +157,9 @@ INSERT INTO O_ATTR
 	"0115173d-5d99-47c7-8f26-a50a77b9753b",
 	"12f74256-ffbe-468a-b189-308115c4bcf3",
 	'IsCurrencySlotOpen',
-	'',
+	'Indicates the status of the currency slot in the payment mchaine.
+True when the slot is open; false otherwise.
+',
 	'',
 	'IsCurrencySlotOpen',
 	0,
@@ -169,7 +177,7 @@ INSERT INTO O_ATTR
 	"0115173d-5d99-47c7-8f26-a50a77b9753b",
 	"a10268b9-e54f-4c29-a450-8da35291296e",
 	'returnedAmount',
-	'',
+	'The amount that should be returned to the user.',
 	'',
 	'returnedAmount',
 	0,
@@ -187,7 +195,7 @@ INSERT INTO O_ATTR
 	"0115173d-5d99-47c7-8f26-a50a77b9753b",
 	"067125e7-f08f-4422-81ae-00d2b0b9c9d2",
 	'AvailableCash',
-	'',
+	'Indicates the available cash in the paymentmachine.',
 	'',
 	'AvailableCash',
 	0,
@@ -205,7 +213,9 @@ INSERT INTO O_ATTR
 	"0115173d-5d99-47c7-8f26-a50a77b9753b",
 	"f52b5283-7813-43f0-af3a-587fe3457cd4",
 	'OverPymentIsAccepted',
-	'',
+	'Indicates weather the user accepted the overpayment or not.
+True when the overpayment if the overpayment has has been accepted; false otherwise.
+',
 	'',
 	'OverPymentIsAccepted',
 	0,
@@ -241,7 +251,7 @@ INSERT INTO O_ATTR
 	"0115173d-5d99-47c7-8f26-a50a77b9753b",
 	"f07d6659-3c08-4a79-8999-5b838f8df140",
 	'ActivatedTicket',
-	'',
+	'Indicates the inserted ticket ID that is currently being processed in the payment machine.',
 	'',
 	'ActivatedTicket',
 	0,
